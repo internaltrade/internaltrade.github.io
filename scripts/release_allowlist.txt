@@ -1,0 +1,6 @@
+# Release ids allowed to appear in the site text even though they are NOT the
+# current release named in ../RELEASE. Use this only for deliberate historical
+# mentions (e.g. "a minor bump from 2026_1.0"). One id per line; # starts a comment.
+#
+# Keep this list as short as possible — every entry is a place verify_release.sh
+# will NOT catch if it drifts. Empty is the healthy state.

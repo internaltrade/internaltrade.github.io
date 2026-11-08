@@ -1,0 +1,36 @@
+Data license — Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The data files in this repository:
+
+    standards/data.js
+    metrics/site_data.json
+    metrics/canada_prov.geojson
+
+are licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0). You are free to share and adapt them for any purpose, including
+commercially, provided you give appropriate credit.
+
+Full legal text:  https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary:  https://creativecommons.org/licenses/by/4.0/
+
+Suggested attribution:
+
+    Interprovincial Trade Project (W. Alschner), Faculty of Law, University of
+    Ottawa. Derived from consolidated regulations of Canada's provinces,
+    territories and federal government, corpus release 2026_1.1.
+
+Scope and caveats:
+
+  * These are DERIVED, aggregated measures and extracted references — not the
+    source legislation. The underlying regulatory texts are works of their
+    respective Crown and governmental publishers and carry their own terms;
+    this licence applies to the project's compilation and derived values, not
+    to the primary law.
+  * canada_prov.geojson is a simplified boundary file for cartographic display
+    only; it is not authoritative for any legal or administrative boundary.
+  * The figures are a frozen research release and are described, with their
+    limitations, on the site itself. Read the method notes before relying on
+    any value.
+
+The software in this repository (HTML, CSS, JavaScript, scripts) is licensed
+separately under the MIT License; see LICENSE.

@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Metrics in Canadian Regulation — Interprovincial Trade Project</title>
+<meta name="description" content="How binding, flexible, complex and dated each Canadian jurisdiction's regulations are — restriction counts and semantic dimensions, mapped across the country and ranked by regulation.">
+<link rel="canonical" href="https://intertra.github.io/Internal-Trade-Canada/metrics/">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interprovincial Trade Project">
+<meta property="og:title" content="Metrics in Canadian Regulation">
+<meta property="og:description" content="How binding, flexible, complex and dated each Canadian jurisdiction's regulations are — restriction counts and semantic dimensions, mapped across the country.">
+<meta property="og:url" content="https://intertra.github.io/Internal-Trade-Canada/metrics/">
+<meta property="og:locale" content="en_CA">
+<meta property="og:image" content="https://intertra.github.io/Internal-Trade-Canada/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Interprovincial Trade Project — Faculty of Law, University of Ottawa">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://intertra.github.io/Internal-Trade-Canada/og-image.png">
+<meta name="twitter:title" content="Metrics in Canadian Regulation">
+<meta name="twitter:description" content="Restriction counts and semantic dimensions across Canada's 14 jurisdictions, mapped and ranked by regulation.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a scholarly explorer — left controls + map, right reading panel; stacks on phones.
+   Palette: deliberate cool paper neutral with an ink text and a single teal accent; a
+   separate amber semantic accent for the semantic-dimension metric group. */
+:root{
+  --paper:#f4f6f8; --card:#ffffff; --ink:#15202b; --muted:#5a6b7a; --faint:#8697a6;
+  --line:#dde4ea; --accent:#0f6f78; --accent-soft:#e2eef0; --amber:#b5651d; --amber-soft:#f3e7da;
+  --nodata:#e6ebef; --good:#2e7d57; --warn:#b5651d;
+  --sc-lo:#edf2f5; --sc-hi:#0f6f78;            /* choropleth ramp, light */
+  --sc-lo2:#f1e9df; --sc-hi2:#b5651d;          /* choropleth ramp (semantic group), light */
+  --shadow:0 1px 2px rgba(20,32,43,.06),0 8px 24px rgba(20,32,43,.06);
+  --disp:"Spectral",Georgia,"Times New Roman",serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0e151c; --card:#151f29; --ink:#e8eef3; --muted:#9fb0bd; --faint:#6d7e8c;
+  --line:#243441; --accent:#4fc4bd; --accent-soft:#132a2b; --amber:#e0a060; --amber-soft:#2a2016;
+  --nodata:#1d2831; --good:#5fc78e; --warn:#e0a060;
+  --sc-lo:#16222c; --sc-hi:#4fc4bd; --sc-lo2:#20242a; --sc-hi2:#e0a060;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.28); color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --paper:#0e151c; --card:#151f29; --ink:#e8eef3; --muted:#9fb0bd; --faint:#6d7e8c;
+  --line:#243441; --accent:#4fc4bd; --accent-soft:#132a2b; --amber:#e0a060; --amber-soft:#2a2016;
+  --nodata:#1d2831; --good:#5fc78e; --warn:#e0a060;
+  --sc-lo:#16222c; --sc-hi:#4fc4bd; --sc-lo2:#20242a; --sc-hi2:#e0a060;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.28); color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.5;
+  font-size:15px;-webkit-text-size-adjust:100%;margin:0}
+.wrap{max-width:1180px;margin:0 auto;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
+h1,h2,h3{font-family:var(--disp);font-weight:600;text-wrap:balance;margin:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+a{color:var(--accent)}
+
+/* Breadcrumb */
+.home-crumb{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--accent);text-decoration:none;padding:18px 0 0}
+
+/* Header */
+header{padding-block:22px 10px}
+.eyebrow{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);
+  font-weight:600;margin-bottom:6px}
+h1{font-size:clamp(26px,5vw,38px);letter-spacing:-.01em}
+.sub{color:var(--muted);margin-top:8px;max-width:62ch}
+.corpusline{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12.5px;color:var(--faint)}
+.corpusline b{color:var(--ink);font-weight:600}
+
+/* Tabs */
+.tabs{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-top:18px}
+.tab{appearance:none;background:none;border:0;border-bottom:2px solid transparent;
+  font-family:var(--body);font-size:14.5px;font-weight:500;color:var(--muted);
+  padding:10px 14px;cursor:pointer;margin-bottom:-1px;border-radius:6px 6px 0 0}
+.tab:hover{color:var(--ink);background:var(--card)}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+main{padding-block:18px 40px}
+
+/* Controls */
+.controls{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:flex-end;margin-bottom:16px}
+.field{display:flex;flex-direction:column;gap:5px;min-width:0}
+.field label{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);font-weight:600}
+select{font-family:var(--body);font-size:14.5px;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);border-radius:8px;padding:9px 32px 9px 11px;cursor:pointer;
+  max-width:100%;appearance:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2 4l4 4 4-4' stroke='%238697a6' stroke-width='1.6' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 11px center}
+select:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--card)}
+.seg button{appearance:none;border:0;background:none;font-family:var(--body);font-size:13.5px;
+  color:var(--muted);padding:9px 13px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:#fff}
+:root[data-theme="dark"] .seg button[aria-pressed="true"],
+:root:not([data-theme="light"]) .seg button[aria-pressed="true"]{color:#07121a}
+.seg button:disabled{opacity:.4;cursor:not-allowed}
+
+/* Province layout */
+.grid{display:grid;grid-template-columns:1.35fr 1fr;gap:20px;align-items:start}
+@media (max-width:820px){.grid{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.panel-pad{padding:16px}
+.metric-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px}
+.metric-head h2{font-size:19px}
+.metric-desc{color:var(--muted);font-size:13px;margin:2px 0 10px}
+svg.map{width:100%;height:auto;display:block}
+.prov-path{stroke:var(--card);stroke-width:.8;cursor:pointer;transition:opacity .12s}
+.prov-path:hover{opacity:.82}
+.prov-path.sel{stroke:var(--ink);stroke-width:1.8}
+.legend{display:flex;align-items:center;gap:10px;margin-top:6px;font-size:12px;color:var(--muted)}
+.legend .bar{height:10px;flex:1;border-radius:5px;min-width:60px}
+.fed{margin-top:12px;display:flex;align-items:center;gap:10px;font-size:13px;
+  padding:9px 12px;border:1px dashed var(--line);border-radius:10px;background:var(--paper)}
+.fed .sw{width:14px;height:14px;border-radius:4px;flex:none}
+.fed b{font-family:var(--mono)}
+
+/* Ranking bars */
+.bars{display:flex;flex-direction:column;gap:7px}
+.barrow{display:grid;grid-template-columns:118px 1fr auto;gap:10px;align-items:center;font-size:13px}
+@media (max-width:420px){.barrow{grid-template-columns:92px 1fr auto}}
+.barrow .nm{color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.barrow.sel .nm{color:var(--ink);font-weight:600}
+.barrow .track{height:16px;background:var(--paper);border-radius:4px;overflow:hidden}
+.barrow .fill{height:100%;border-radius:4px}
+.barrow .val{font-family:var(--mono);font-size:12.5px;color:var(--ink);min-width:0}
+.barrow .fedtag{font-size:10px;color:var(--faint);border:1px solid var(--line);border-radius:4px;
+  padding:0 4px;margin-left:6px}
+
+/* Detail panel */
+#detail h3{font-size:18px}
+#detail .cite{color:var(--muted);font-size:13px;margin-top:2px}
+.statgrid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:12px}
+.statgrid .cell{background:var(--card);padding:10px 12px}
+.statgrid .k{font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--faint)}
+.statgrid .v{font-family:var(--mono);font-size:16px;margin-top:2px}
+.statgrid .v small{font-size:11px;color:var(--faint);font-family:var(--body)}
+.hint{color:var(--faint);font-size:13px}
+
+/* Tooltip */
+#tip{position:fixed;pointer-events:none;z-index:50;background:var(--ink);color:var(--paper);
+  padding:7px 10px;border-radius:8px;font-size:12.5px;box-shadow:var(--shadow);opacity:0;
+  transition:opacity .1s;max-width:220px}
+#tip .tv{font-family:var(--mono);font-weight:500}
+
+/* Regulation table */
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);font-weight:600;
+  position:sticky;top:env(safe-area-inset-top,0px);background:var(--card)}
+td.num,th.num{text-align:right;font-family:var(--mono);white-space:nowrap}
+.rank{color:var(--faint);font-family:var(--mono)}
+.tbl-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:1px 7px;border-radius:20px;
+  background:var(--accent-soft);color:var(--accent)}
+
+/* Placeholder tabs */
+.empty{text-align:center;max-width:52ch;margin:40px auto;color:var(--muted)}
+.empty h2{font-size:22px;color:var(--ink);margin-bottom:10px}
+.empty .ic{font-size:30px;margin-bottom:6px;opacity:.5}
+
+/* Footnote */
+.notes{margin-top:26px;font-size:12.5px;color:var(--faint);border-top:1px solid var(--line);
+  padding-top:14px;display:grid;gap:6px;max-width:80ch}
+.notes b{color:var(--muted)}
+.loading{padding:60px 0;text-align:center;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<a class="home-crumb" href="../index.html">&larr;&nbsp; Interprovincial Trade Project</a>
+<header>
+  <div class="eyebrow">Canadian regulation corpus · release 2026_1.1</div>
+  <h1>Metrics in Canadian Regulation</h1>
+  <p class="sub">How binding, flexible, complex and dated are the regulations of Canada's provinces,
+  territories and federal government? Two lenses over one corpus: Mercatus
+  <a href="https://www.quantgov.org/canada-regdata" target="_blank" rel="noopener"><b>RegData</b></a>
+  restriction counts and the four
+  <a href="https://github.com/WAlschner/Semantic-Analysis-Regulations" target="_blank" rel="noopener"><b>semantic dimensions</b></a>
+  from Alschner, Zachar &amp; Pontello (2018).</p>
+  <div class="corpusline" id="corpusline"></div>
+</header>
+
+<div class="tabs" role="tablist" aria-label="Views">
+  <button class="tab" role="tab" id="tab-province" aria-selected="true">By province</button>
+  <button class="tab" role="tab" id="tab-regulation" aria-selected="false">By regulation</button>
+  <button class="tab" role="tab" id="tab-industry" aria-selected="false">By industry (NAICS)</button>
+  <button class="tab" role="tab" id="tab-product" aria-selected="false">By product / issue</button>
+</div>
+
+<main>
+  <div class="loading" id="loading">Loading corpus metrics…</div>
+
+  <!-- PROVINCE -->
+  <section id="view-province" hidden>
+    <div class="controls">
+      <div class="field">
+        <label for="metric">Metric</label>
+        <select id="metric"></select>
+      </div>
+      <div class="field" id="modeField">
+        <label>Measure</label>
+        <div class="seg" role="group" aria-label="Measure">
+          <button id="mode-density" aria-pressed="true">Per 1,000 words</button>
+          <button id="mode-total" aria-pressed="false">Total count</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="panel panel-pad">
+        <div class="metric-head">
+          <h2 id="mTitle">Restrictions</h2>
+          <span class="hint" id="mScope"></span>
+        </div>
+        <p class="metric-desc" id="mDesc"></p>
+        <svg class="map" viewBox="0 0 640 500" id="map" role="img" aria-label="Choropleth map of Canada"></svg>
+        <div class="legend">
+          <span id="legLo" class="mono"></span>
+          <span class="bar" id="legBar"></span>
+          <span id="legHi" class="mono"></span>
+        </div>
+        <div class="fed" id="fedBox"></div>
+      </div>
+
+      <div>
+        <div class="panel panel-pad">
+          <div class="metric-head"><h2>Ranked</h2><span class="hint">all jurisdictions</span></div>
+          <div class="bars" id="bars" style="margin-top:8px"></div>
+        </div>
+        <div class="panel panel-pad" id="detail" style="margin-top:16px">
+          <p class="hint">Select a jurisdiction on the map or list to see its full profile.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGULATION -->
+  <section id="view-regulation" hidden>
+    <div class="controls">
+      <div class="field">
+        <label for="rmetric">Rank regulations by</label>
+        <select id="rmetric"></select>
+      </div>
+      <div class="field">
+        <label for="rprov">Jurisdiction</label>
+        <select id="rprov"></select>
+      </div>
+    </div>
+    <p class="metric-desc" id="rDesc" style="margin-bottom:12px"></p>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th style="width:34px">#</th><th>Regulation</th><th>Jurisdiction</th>
+          <th class="num" id="rValHead">Value</th><th class="num">Body words</th></tr></thead>
+        <tbody id="rbody"></tbody>
+      </table>
+    </div>
+    <p class="hint" style="margin-top:10px" id="rNote"></p>
+  </section>
+
+  <!-- INDUSTRY -->
+  <section id="view-industry" hidden>
+    <div class="empty">
+      <div class="ic">◳</div>
+      <h2>Industry view is not built yet</h2>
+      <p>Grouping regulations by NAICS industry needs a mapping from each regulation to the sectors it
+      governs. The corpus carries each regulation's <b>enabling statute</b> (3,516 distinct parent acts),
+      which is the natural bridge to NAICS, but the industry coding itself is Phase 2 work and isn't in
+      release 2026_1.1 yet. When that mapping lands, this tab will show the same metrics per industry.</p>
+    </div>
+  </section>
+
+  <!-- PRODUCT -->
+  <section id="view-product" hidden>
+    <div class="empty">
+      <div class="ic">◇</div>
+      <h2>Product / issue view is not built yet</h2>
+      <p>This view would group regulations by the goods or issues they regulate — the level at which an
+      interprovincial divergence like differing construction-site toilet-seat requirements becomes
+      visible. It depends on a product/issue classification of each provision, which is active Phase 2
+      research and isn't in the corpus yet.</p>
+    </div>
+  </section>
+
+  <div class="notes" id="notes" hidden>
+    <div><b>Standard cut.</b> <span id="noteCut"></span></div>
+    <div><b>Body only.</b> Schedules (fee tables, prescribed forms) are excluded from every measure — provinces break them out at very different rates.</div>
+    <div><b>English only.</b> Restriction counting is calibrated on English; French text is excluded rather than scored near-zero. Quebec's figures are its English-language regulations.</div>
+    <div><b>RegData v1.</b> Restriction counts run about 12% high versus a pending v2 (word-boundary, no cross-measure overlap). Treat levels as provisional; rankings are stable.</div>
+    <div><b>Pooled.</b> A province's value is its total hits over its total words, so a few thousand short municipal orders don't swamp it. Age is the median years since last amendment, shown only where dates exist.</div>
+    <div><b>Sources — check the methodology.</b> RegData restriction counting (shall, must, may not, required, prohibited) and the published federal counts: <a href="https://www.quantgov.org/canada-regdata" target="_blank" rel="noopener">QuantGov RegData Canada</a> (Mercatus Center). The four semantic dimensions and their wordlists: <a href="https://github.com/WAlschner/Semantic-Analysis-Regulations" target="_blank" rel="noopener">Alschner, Zachar &amp; Pontello (2018)</a>. Applying RegData's exact five-term lexicon to this corpus gives 90,944 federal restrictions, within a few percent of RegData Canada's published ~86,000–90,000.</div>
+  </div>
+</main>
+</div>
+<div id="tip"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+const METRICS = [
+  {id:"restrictions", grp:"RegData (Mercatus)", label:"Restrictions", count:true,
+   dens:"restrictions_density", tot:"restrictions_total",
+   desc:"Binding terms (shall, must, prohibited…) — the RegData measure of regulatory restrictiveness."},
+  {id:"obligations", grp:"RegData (Mercatus)", label:"Obligations", count:true,
+   dens:"obligations_density", tot:"obligations_total",
+   desc:"Duty terms (obliged, duty to, required to)."},
+  {id:"permissive", grp:"RegData (Mercatus)", label:"Permissive terms", count:true,
+   dens:"permissive_density", tot:"permissive_total",
+   desc:"Discretion-granting terms (may, entitled to, has the right to)."},
+  {id:"outdated_refs", grp:"RegData (Mercatus)", label:"Outdated references", count:true,
+   dens:"outdated_refs_density", tot:"outdated_refs_total",
+   desc:"Year references more than ten years old."},
+  {id:"prescriptivity", grp:"Semantic dimensions", label:"Prescriptivity", count:false,
+   field:"prescriptivity", ratio:true,
+   desc:"How binding the drafting is: the ratio of prescriptive to permissive language (above 1 = net binding)."},
+  {id:"exceptions", grp:"Semantic dimensions", label:"Flexibility — exceptions", count:false,
+   field:"exceptions_idx", desc:"Exception language (unless, except, subject to) per 100 words — flexibility for the regulated party."},
+  {id:"discretions", grp:"Semantic dimensions", label:"Flexibility — discretion", count:false,
+   field:"discretions_idx", desc:"Discretionary language (if practicable, appropriate) per 100 words — flexibility for the regulator."},
+  {id:"legal_jargon", grp:"Semantic dimensions", label:"Complexity — legal jargon", count:false,
+   field:"legal_jargon_idx", desc:"Archaic, wordy legalese (notwithstanding, in the event that) per 100 words."},
+  {id:"cross_ref", grp:"Semantic dimensions", label:"Complexity — cross-referencing", count:false,
+   field:"cross_ref_idx", desc:"Internal cross-references (section, subsection, paragraph) per 100 words."},
+  {id:"outdated_words", grp:"Semantic dimensions", label:"Age — outdated technology", count:false,
+   field:"outdated_words_idx", desc:"Outdated-technology terms (fax, telex, pencil) per 100 words."},
+  {id:"age", grp:"Semantic dimensions", label:"Age — years since amended", count:false,
+   field:"age_years_median", nodataNote:"grey = no amendment dates on file",
+   desc:"Median years since last amendment. Grey where the jurisdiction carries no amendment dates."}
+];
+const RANKMETRIC = { restrictions:"restrictions_density", obligations:"obligations_density",
+  permissive:"permissive_density", outdated_refs:"outdated_refs_density", prescriptivity:"prescriptivity",
+  exceptions:"exceptions_idx", discretions:"discretions_idx", legal_jargon:"legal_jargon_idx",
+  cross_ref:"cross_ref_idx", outdated_words:"outdated_words_idx", age:"age_years" };
+
+let DATA, GEO, PROV={}, state={tab:"province", metric:"restrictions", mode:"density", sel:null};
+
+// d3 treats clockwise exterior rings as covering the whole sphere. Reverse any feature
+// the sphere-aware area function reports as inverted (> 2π steradians), so winding is correct
+// whatever the source file's orientation.
+function rewind(geo){
+  const flip=cs=>cs.map(r=>r.slice().reverse());
+  geo.features.forEach(f=>{
+    if(d3.geoArea(f) > 2*Math.PI){
+      if(f.geometry.type==="Polygon") f.geometry.coordinates=flip(f.geometry.coordinates);
+      else if(f.geometry.type==="MultiPolygon") f.geometry.coordinates=f.geometry.coordinates.map(flip);
+    }
+  });
+  return geo;
+}
+function cssvar(n){ return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
+function mdef(id){ return METRICS.find(m=>m.id===id); }
+function fmt(v,count,ratio){
+  if(v==null||isNaN(v)) return "—";
+  if(count) return v>=1000? Math.round(v).toLocaleString() : v.toFixed(2);
+  if(ratio) return v.toFixed(2);
+  return v.toFixed(2);
+}
+// value for a province object under current metric+mode
+function pval(p){
+  const m=mdef(state.metric);
+  if(!p) return null;
+  if(m.count) return state.mode==="density"? p[m.dens] : p[m.tot];
+  return p[m.field];
+}
+function unitLabel(){
+  const m=mdef(state.metric);
+  if(m.count) return state.mode==="density"? "per 1,000 words" : "total";
+  if(m.ratio) return "ratio";
+  if(m.id==="age") return "years";
+  return "per 100 words";
+}
+
+Promise.all([
+  fetch("site_data.json").then(r=>r.json()),
+  fetch("canada_prov.geojson").then(r=>r.json())
+]).then(([d,g])=>{ DATA=d; GEO=rewind(g); d.provinces.forEach(p=>PROV[p.prov]=p); boot(); })
+ .catch(e=>{ document.getElementById("loading").textContent="Could not load data: "+e.message; });
+
+function boot(){
+  document.getElementById("loading").hidden=true;
+  // corpus line
+  const totDocs=DATA.provinces.reduce((a,p)=>a+p.docs,0);
+  document.getElementById("corpusline").innerHTML=
+    `<span><b>${totDocs.toLocaleString()}</b> regulations in the analysis cut</span>`+
+    `<span><b>14</b> jurisdictions (10 provinces · 3 territories · federal)</span>`+
+    `<span><b>${DATA.meta.release}</b> frozen release</span>`;
+  document.getElementById("noteCut").textContent=DATA.meta.cut+".";
+  // metric selects (grouped)
+  const sel=document.getElementById("metric"), rsel=document.getElementById("rmetric");
+  let g=null;
+  METRICS.forEach(m=>{
+    if(m.grp!==g){ g=m.grp;
+      [sel,rsel].forEach(s=>{const og=document.createElement("optgroup");og.label=g;og.dataset.g=g;s.appendChild(og);});
+    }
+    [sel,rsel].forEach(s=>{const o=document.createElement("option");o.value=m.id;o.textContent=m.label;
+      s.querySelector(`optgroup[data-g="${m.grp}"]`).appendChild(o);});
+  });
+  sel.value=state.metric; rsel.value=state.metric;
+  // jurisdiction filter for regulation tab
+  const rprov=document.getElementById("rprov");
+  rprov.innerHTML=`<option value="">All jurisdictions</option>`+
+    DATA.provinces.slice().sort((a,b)=>a.name.localeCompare(b.name))
+      .map(p=>`<option value="${p.prov}">${p.name}</option>`).join("");
+
+  sel.onchange=()=>{state.metric=sel.value; syncMode(); renderProvince();};
+  document.getElementById("mode-density").onclick=()=>{state.mode="density";syncMode();renderProvince();};
+  document.getElementById("mode-total").onclick=()=>{state.mode="total";syncMode();renderProvince();};
+  rsel.onchange=renderReg; rprov.onchange=renderReg;
+
+  // tabs
+  const tabs=[["province","By province"],["regulation","By regulation"],["industry",""],["product",""]];
+  tabs.forEach(([id])=>{
+    document.getElementById("tab-"+id).addEventListener("click",()=>switchTab(id));
+  });
+  // theme re-render
+  const mq=window.matchMedia("(prefers-color-scheme:dark)");
+  mq.addEventListener&&mq.addEventListener("change",()=>{if(state.tab==="province")renderProvince();});
+  new MutationObserver(()=>{if(state.tab==="province")renderProvince();})
+    .observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+
+  drawMapBase();
+  syncMode(); switchTab("province");
+  document.getElementById("notes").hidden=false;
+}
+
+function syncMode(){
+  const m=mdef(state.metric), on=m.count;
+  document.getElementById("modeField").style.visibility=on?"visible":"hidden";
+  document.getElementById("mode-density").setAttribute("aria-pressed",String(state.mode==="density"));
+  document.getElementById("mode-total").setAttribute("aria-pressed",String(state.mode==="total"));
+}
+
+function switchTab(id){
+  state.tab=id;
+  ["province","regulation","industry","product"].forEach(t=>{
+    document.getElementById("view-"+t).hidden=(t!==id);
+    const tb=document.getElementById("tab-"+t);
+    tb.setAttribute("aria-selected",String(t===id));
+  });
+  if(id==="province") renderProvince();
+  if(id==="regulation"){ document.getElementById("rmetric").value=state.metric; renderReg(); }
+}
+
+/* ---------- MAP ---------- */
+let path;
+function drawMapBase(){
+  const svg=d3.select("#map"), W=640,H=500;
+  // Equal-area conic (Albers) — bounded, unlike conformal, which wraps to a disc under fitExtent.
+  const proj=d3.geoConicEqualArea().rotate([100,0]).center([0,60]).parallels([50,70]);
+  proj.fitExtent([[10,10],[W-10,H-10]],GEO);
+  path=d3.geoPath(proj);
+  svg.selectAll("path").data(GEO.features).join("path")
+    .attr("class","prov-path").attr("d",path)
+    .attr("data-code",f=>f.properties.code)
+    .on("mousemove",(ev,f)=>showTip(ev,f.properties.code))
+    .on("mouseleave",hideTip)
+    .on("click",(ev,f)=>{state.sel=f.properties.code; renderProvince();});
+}
+function rampColor(t,semantic){
+  const lo=cssvar(semantic?"--sc-lo2":"--sc-lo"), hi=cssvar(semantic?"--sc-hi2":"--sc-hi");
+  return d3.interpolateLab(lo,hi)(t);
+}
+function renderProvince(){
+  const m=mdef(state.metric);
+  document.getElementById("mTitle").textContent=m.label;
+  document.getElementById("mDesc").textContent=m.desc;
+  document.getElementById("mScope").textContent=unitLabel();
+  const semantic = m.grp.startsWith("Semantic");
+  // domain across the 13 subnational jurisdictions (exclude federal from the map scale)
+  const subs=DATA.provinces.filter(p=>p.prov!=="CA");
+  const vals=subs.map(p=>pval(p)).filter(v=>v!=null&&!isNaN(v));
+  const lo=Math.min(...vals), hi=Math.max(...vals);
+  const scale=v=>(hi>lo)?(v-lo)/(hi-lo):0.5;
+  // paint
+  d3.select("#map").selectAll("path.prov-path").attr("fill",f=>{
+    const p=PROV[f.properties.code]; const v=p?pval(p):null;
+    return (v==null||isNaN(v))? cssvar("--nodata") : rampColor(scale(v),semantic);
+  }).classed("sel",f=>f.properties.code===state.sel);
+  // legend
+  document.getElementById("legLo").textContent=fmt(lo,m.count,m.ratio);
+  document.getElementById("legHi").textContent=fmt(hi,m.count,m.ratio);
+  document.getElementById("legBar").style.background=
+    `linear-gradient(90deg,${rampColor(0,semantic)},${rampColor(1,semantic)})`;
+  // federal benchmark
+  const ca=PROV["CA"], cav=pval(ca);
+  const fed=document.getElementById("fedBox");
+  if(cav!=null&&!isNaN(cav)){
+    const t=(cav>=lo&&hi>lo)?Math.max(0,Math.min(1,scale(cav))):0.5;
+    fed.innerHTML=`<span class="sw" style="background:${rampColor(t,semantic)}"></span>`+
+      `<span>Federal benchmark — <b>${fmt(cav,m.count,m.ratio)}</b> ${unitLabel()} `+
+      `<span class="hint">(not shown on map; ${ca.docs.toLocaleString()} regs)</span></span>`;
+  } else fed.innerHTML=`<span class="hint">Federal: no value for this metric.</span>`;
+  renderBars(semantic,lo,hi,scale);
+  renderDetail();
+  if(m.nodataNote) document.getElementById("mScope").textContent=unitLabel()+" · "+m.nodataNote;
+}
+function renderBars(semantic,lo,hi,scale){
+  const m=mdef(state.metric);
+  const rows=DATA.provinces.slice().map(p=>({p,v:pval(p)}))
+    .sort((a,b)=>(b.v==null?-1:b.v)-(a.v==null?-1:a.v));
+  const box=document.getElementById("bars"); box.innerHTML="";
+  rows.forEach(({p,v})=>{
+    const el=document.createElement("div"); el.className="barrow"+(p.prov===state.sel?" sel":"");
+    const t=(v==null||hi<=lo)?0:Math.max(.02,scale(v));
+    const col=(v==null)?cssvar("--nodata"):rampColor(p.prov==="CA"?Math.max(0,Math.min(1,scale(v))):t,semantic);
+    el.innerHTML=`<span class="nm" title="${p.name}">${p.name}${p.prov==="CA"?'<span class="fedtag">fed</span>':''}</span>`+
+      `<span class="track"><span class="fill" style="width:${(v==null?0:t)*100}%;background:${col}"></span></span>`+
+      `<span class="val">${fmt(v,m.count,m.ratio)}</span>`;
+    el.style.cursor="pointer"; el.onclick=()=>{state.sel=p.prov; renderProvince();};
+    box.appendChild(el);
+  });
+}
+function renderDetail(){
+  const d=document.getElementById("detail");
+  if(!state.sel){ d.innerHTML=`<p class="hint">Select a jurisdiction on the map or list to see its full profile.</p>`; return; }
+  const p=PROV[state.sel]; if(!p){d.innerHTML="";return;}
+  const row=(k,v,u)=>`<div class="cell"><div class="k">${k}</div><div class="v">${v} <small>${u||""}</small></div></div>`;
+  d.innerHTML=`<h3>${p.name}${p.prov==="CA"?' <span class="pill">federal</span>':''}</h3>`+
+    `<div class="cite">${p.docs.toLocaleString()} regulations · ${(p.body_words/1e6).toFixed(2)}M body words</div>`+
+    `<div class="statgrid">`+
+      row("Restrictions",p.restrictions_density.toFixed(2),"per 1k")+
+      row("Obligations",p.obligations_density.toFixed(2),"per 1k")+
+      row("Permissive",p.permissive_density.toFixed(2),"per 1k")+
+      row("Prescriptivity",p.prescriptivity.toFixed(2),"ratio")+
+      row("Cross-referencing",p.cross_ref_idx.toFixed(2),"per 100w")+
+      row("Legal jargon",p.legal_jargon_idx.toFixed(2),"per 100w")+
+      row("Exceptions",p.exceptions_idx.toFixed(2),"per 100w")+
+      row("Age",p.age_years_median==null?"—":p.age_years_median.toFixed(1),p.age_years_median==null?"no dates":"yrs median")+
+    `</div>`;
+}
+function showTip(ev,code){
+  const p=PROV[code], m=mdef(state.metric); if(!p){return;}
+  const v=pval(p); const tip=document.getElementById("tip");
+  tip.innerHTML=`<div>${p.name}</div><div class="tv">${fmt(v,m.count,m.ratio)} <span style="opacity:.7">${unitLabel()}</span></div>`;
+  tip.style.opacity="1";
+  const pad=14; let x=ev.clientX+pad, y=ev.clientY+pad;
+  if(x>innerWidth-230) x=ev.clientX-230;
+  tip.style.left=x+"px"; tip.style.top=y+"px";
+}
+function hideTip(){ document.getElementById("tip").style.opacity="0"; }
+
+/* ---------- REGULATION ---------- */
+function renderReg(){
+  const mid=document.getElementById("rmetric").value;
+  state.metric=mid;
+  const m=mdef(mid); const key=RANKMETRIC[mid];
+  const provFilter=document.getElementById("rprov").value;
+  let rows=(DATA.rankings[key]||[]).slice();
+  if(provFilter) rows=rows.filter(r=>r.prov===provFilter);
+  document.getElementById("rDesc").textContent=m.desc;
+  const unit = m.count?"per 1,000 words" : (m.ratio?"ratio" : (mid==="age"?"years":"per 100 words"));
+  document.getElementById("rValHead").textContent=m.label.replace(/^.*— /,"")+" ("+unit+")";
+  const tb=document.getElementById("rbody"); tb.innerHTML="";
+  if(!rows.length){ tb.innerHTML=`<tr><td colspan="5" class="hint" style="padding:18px">No regulations for this jurisdiction in the top ranking.</td></tr>`; }
+  rows.forEach((r,i)=>{
+    const tr=document.createElement("tr");
+    const cite=r.citation?`<span class="mono" style="color:var(--muted)">${r.citation}</span>`:"";
+    const act=r.enabling_act?` · ${r.enabling_act}`:"";
+    tr.innerHTML=`<td class="rank">${i+1}</td>`+
+      `<td><div style="font-weight:500">${esc(r.title)}</div>`+
+      `<div class="hint" style="font-size:12px">${cite}${esc(act)}</div></td>`+
+      `<td>${r.name}</td><td class="num">${r.value.toFixed(2)}</td>`+
+      `<td class="num">${r.words.toLocaleString()}</td>`;
+    tb.appendChild(tr);
+  });
+  const floorTxt = m.count? "≥ 500 body words" : (mid==="prescriptivity"||mid==="age"?"≥ "+(mid==="age"?100:200)+" body words":"≥ 500 body words");
+  document.getElementById("rNote").textContent=
+    `Top 25 by ${unit}, ${provFilter?PROV[provFilter].name:"all jurisdictions"}. Length floor applied (${floorTxt}) so very short instruments don't dominate.`;
+}
+function esc(s){ return (s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
+</script>
+
+</body>
+</html>

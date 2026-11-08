@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Standards in Canadian Regulation — Interprovincial Trade Project</title>
+<meta name="description" content="Which technical standards Canadian regulators write into law, which editions they pin, and where one government accepts a foreign standard its neighbour will not. All 14 jurisdictions.">
+<link rel="canonical" href="https://intertra.github.io/Internal-Trade-Canada/standards/">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interprovincial Trade Project">
+<meta property="og:title" content="Standards in Canadian Regulation">
+<meta property="og:description" content="Which technical standards Canadian regulators write into law, which editions they pin, and where one government accepts a foreign standard its neighbour will not.">
+<meta property="og:url" content="https://intertra.github.io/Internal-Trade-Canada/standards/">
+<meta property="og:locale" content="en_CA">
+<meta property="og:image" content="https://intertra.github.io/Internal-Trade-Canada/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Interprovincial Trade Project — Faculty of Law, University of Ottawa">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://intertra.github.io/Internal-Trade-Canada/og-image.png">
+<meta name="twitter:title" content="Standards in Canadian Regulation">
+<meta name="twitter:description" content="Which standards Canadian regulators cite, which editions they pin, and where they accept a foreign standard.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+:root{
+  --ground:#F5F7FA; --surface:#FFFFFF; --surface-2:#EDF1F6; --surface-3:#E3E9F1;
+  --ink:#141820; --ink-2:#4B5462; --ink-3:#6F7887;
+  --rule:#D7DDE6; --rule-2:#E7ECF2;
+  --accent:#1D4E77; --accent-2:#2E6B9E; --accent-soft:#E3ECF4;
+  --warn:#8A5A12; --warn-soft:#FBF2E2;
+  --alert:#8E2F26; --alert-soft:#FAEBE9;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#11151B; --surface:#171C24; --surface-2:#1E252F; --surface-3:#252E3A;
+  --ink:#E6EBF2; --ink-2:#A6B1C0; --ink-3:#7E8896;
+  --rule:#2A3340; --rule-2:#222A35;
+  --accent:#7FB3DC; --accent-2:#9CC6E6; --accent-soft:#1B2A38;
+  --warn:#D9A95E; --warn-soft:#2A2214;
+  --alert:#E0837A; --alert-soft:#2C1917;
+}}
+:root[data-theme="dark"]{
+  --ground:#11151B; --surface:#171C24; --surface-2:#1E252F; --surface-3:#252E3A;
+  --ink:#E6EBF2; --ink-2:#A6B1C0; --ink-3:#7E8896;
+  --rule:#2A3340; --rule-2:#222A35;
+  --accent:#7FB3DC; --accent-2:#9CC6E6; --accent-soft:#1B2A38;
+  --warn:#D9A95E; --warn-soft:#2A2214;
+  --alert:#E0837A; --alert-soft:#2C1917;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:15px;
+  line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1020px;margin:0 auto;padding-inline:20px;padding-block:0 80px}
+.mast{padding-block:44px 26px;border-bottom:2px solid var(--ink)}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 14px}
+h1{font-size:clamp(29px,5vw,44px);line-height:1.08;margin:0 0 14px;font-weight:600;
+  letter-spacing:-.022em;text-wrap:balance}
+.standfirst{font-family:var(--serif);font-size:17.5px;line-height:1.52;color:var(--ink-2);
+  max-width:62ch;margin:0 0 16px}
+.provenance{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);
+  display:flex;flex-wrap:wrap;gap:6px 18px}
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--ground);
+  border-bottom:1px solid var(--rule);display:flex;gap:2px;overflow-x:auto;padding-top:6px}
+.tab{appearance:none;background:none;border:0;border-bottom:3px solid transparent;
+  font-family:var(--sans);font-size:13.5px;font-weight:500;color:var(--ink-3);
+  padding:12px 13px;cursor:pointer;white-space:nowrap}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.tabnum{font-family:var(--mono);font-size:10.5px;color:var(--accent);margin-right:6px}
+.panel{padding-top:32px}
+h2{font-size:23px;font-weight:600;letter-spacing:-.012em;margin:42px 0 8px;text-wrap:balance}
+h2:first-of-type{margin-top:8px}
+h3{font-size:12px;font-family:var(--mono);letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink-3);margin:34px 0 12px;font-weight:500}
+p{margin:0 0 14px;max-width:70ch}
+.lede{font-family:var(--serif);font-size:16.5px;color:var(--ink-2);max-width:64ch}
+code{font-family:var(--mono);font-size:.88em;background:var(--surface-2);padding:1px 5px;border-radius:3px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(136px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);margin:24px 0 8px}
+.stat{background:var(--surface);padding:16px 14px}
+.stat .n{font-family:var(--mono);font-size:25px;font-weight:500;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums;display:block;line-height:1.1}
+.stat .k{font-size:11.5px;color:var(--ink-3);margin-top:5px;display:block;line-height:1.35}
+.snip{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--accent);
+  margin:0 0 12px;display:grid;grid-template-columns:auto 1fr}
+.snip-tag{font-family:var(--mono);font-size:11px;font-weight:500;color:var(--accent);
+  background:var(--accent-soft);padding:12px 10px;letter-spacing:.06em;display:flex;
+  flex-direction:column;gap:3px;align-items:flex-start;min-width:78px}
+.snip-tag .cite{font-size:9.5px;color:var(--ink-3);letter-spacing:.02em;font-weight:400;
+  line-height:1.3;word-break:break-word}
+.snip-body{padding:12px 14px;font-family:var(--serif);font-size:14.5px;line-height:1.5}
+.snip mark{background:var(--warn-soft);color:var(--ink);padding:0 2px;box-shadow:inset 0 -1px 0 var(--warn)}
+.snip .ed{font-family:var(--mono);font-size:.92em;font-weight:500;color:var(--accent)}
+.snipnote{font-size:12.5px;color:var(--ink-3);margin:-4px 0 18px}
+.tw{overflow-x:auto;margin:0 0 20px;border:1px solid var(--rule);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:440px}
+th{text-align:left;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-3);font-weight:500;padding:10px 12px;border-bottom:1px solid var(--rule);white-space:nowrap}
+td{padding:9px 12px;border-bottom:1px solid var(--rule-2);vertical-align:top}
+tbody tr:last-child td{border-bottom:0}
+td.n,th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+td.mono{font-family:var(--mono);font-size:12.5px}
+.big{font-weight:600;color:var(--accent)}
+.note{border:1px solid var(--rule);border-left:3px solid var(--warn);background:var(--warn-soft);
+  padding:13px 15px;margin:0 0 16px;font-size:14px}
+.note.alert{border-left-color:var(--alert);background:var(--alert-soft)}
+.note.plain{border-left-color:var(--accent);background:var(--surface)}
+.note p{margin:0 0 8px;max-width:66ch}
+.note p:last-child{margin:0}
+.note .hd{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--warn);margin-bottom:6px;font-weight:500}
+.note.alert .hd{color:var(--alert)}
+.note.plain .hd{color:var(--accent)}
+.issues{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-bottom:22px}
+.issue{background:var(--surface);padding:14px 16px;display:grid;grid-template-columns:96px 1fr;
+  gap:14px;align-items:start}
+.issue .sev{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+  padding:3px 7px;border-radius:2px;font-weight:500;text-align:center;white-space:nowrap}
+.sev.major{background:var(--alert-soft);color:var(--alert)}
+.sev.limits{background:var(--warn-soft);color:var(--warn)}
+.sev.known{background:var(--surface-2);color:var(--ink-3)}
+.issue .txt{font-size:13.5px;line-height:1.5}
+.issue .txt b{display:block;font-weight:600;margin-bottom:2px;font-size:14px}
+ul{margin:0 0 16px;padding-left:20px;max-width:68ch}
+li{margin-bottom:7px}
+/* ---- explorer ---- */
+.controls{background:var(--surface);border:1px solid var(--rule);padding:16px;margin-bottom:6px;
+  display:grid;gap:14px}
+.ctl-row{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+label.fl{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:5px;font-weight:500}
+input[type=search],select{width:100%;font-family:var(--sans);font-size:14px;padding:8px 10px;
+  background:var(--ground);color:var(--ink);border:1px solid var(--rule);border-radius:3px}
+input[type=search]:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{appearance:none;font-family:var(--mono);font-size:11px;padding:4px 9px;cursor:pointer;
+  background:var(--ground);color:var(--ink-2);border:1px solid var(--rule);border-radius:12px}
+.chip[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+.chip:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.resbar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;
+  font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin:14px 0 12px}
+.resbar b{color:var(--ink);font-size:15px;font-weight:500}
+.reset{appearance:none;background:none;border:0;border-bottom:1px solid var(--accent);
+  color:var(--accent);font-family:var(--mono);font-size:11px;cursor:pointer;padding:0}
+.hit{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--accent-2);
+  margin-bottom:9px;padding:12px 14px}
+.hit-top{display:flex;flex-wrap:wrap;gap:7px;align-items:baseline;margin-bottom:7px}
+.hit-std{font-family:var(--mono);font-size:13.5px;font-weight:500;color:var(--accent)}
+.hit-pill{font-family:var(--mono);font-size:10px;letter-spacing:.05em;padding:2px 7px;border-radius:2px;
+  background:var(--surface-2);color:var(--ink-3)}
+.hit-pill.j{background:var(--accent-soft);color:var(--accent);font-weight:500}
+.hit-pill.amb{background:var(--warn-soft);color:var(--warn)}
+.hit-src{font-size:11.5px;color:var(--ink-3);margin-bottom:7px;font-family:var(--mono)}
+.hit-txt{font-family:var(--serif);font-size:14px;line-height:1.5;color:var(--ink)}
+.hit-txt mark{background:var(--warn-soft);color:var(--ink);padding:0 2px;font-weight:500}
+.empty{background:var(--surface);border:1px dashed var(--rule);padding:28px 20px;text-align:center;
+  color:var(--ink-3);font-size:14px}
+.foot{margin-top:52px;padding-top:18px;border-top:1px solid var(--rule);
+  font-family:var(--mono);font-size:11.5px;color:var(--ink-3);line-height:1.7}
+.foot a{color:var(--accent)}
+@media (max-width:560px){
+  .snip{grid-template-columns:1fr}
+  .snip-tag{flex-direction:row;align-items:baseline;gap:9px;min-width:0;padding:8px 12px}
+  .issue{grid-template-columns:1fr;gap:7px}
+  .issue .sev{justify-self:start}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<a href="../index.html" style="display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);text-decoration:none;padding:18px 0 0">&larr;&nbsp; Interprovincial Trade Project</a>
+<header class="mast">
+  <p class="eyebrow">Interprovincial Trade Project · University of Ottawa</p>
+  <h1>Standards in Canadian Regulation</h1>
+  <p class="standfirst">Canadian governments write technical requirements into law by referring to standards someone else wrote. This site maps that practice across all fourteen jurisdictions: which standards are referenced, which editions, on what terms, and where one jurisdiction will accept a foreign standard that its neighbour will not.</p>
+  <div class="provenance">
+    <span>Release 2026_1.1 · frozen 2026-10-15</span><span>21,318 regulations · 754,071 provisions</span><span>In force, body only</span>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Sections">
+  <button class="tab" role="tab" id="t-0" aria-controls="p-0" aria-selected="true"><span class="tabnum">00</span>Overview</button>
+  <button class="tab" role="tab" id="t-1" aria-controls="p-1" aria-selected="false"><span class="tabnum">01</span>Editions</button>
+  <button class="tab" role="tab" id="t-2" aria-controls="p-2" aria-selected="false"><span class="tabnum">02</span>What a citation binds</button>
+  <button class="tab" role="tab" id="t-3" aria-controls="p-3" aria-selected="false"><span class="tabnum">03</span>Canada, US, Europe</button>
+  <button class="tab" role="tab" id="t-4" aria-controls="p-4" aria-selected="false"><span class="tabnum">04</span>Model codes</button>
+  <button class="tab" role="tab" id="t-5" aria-controls="p-5" aria-selected="false"><span class="tabnum">05</span>Search the data</button>
+  <button class="tab" role="tab" id="t-6" aria-controls="p-6" aria-selected="false"><span class="tabnum">06</span>Method &amp; limits</button>
+</nav>
+
+<!-- ============ 00 OVERVIEW ============ -->
+<section class="panel" role="tabpanel" id="p-0" aria-labelledby="t-0">
+  <p class="lede">A regulation rarely spells out how thick a steel pipe must be or how a harness must be tested. It points to a standard — CSA, ASTM, ISO — and gives that document legal force. Which standard a government points to, and which version, decides what a business has to build.</p>
+
+  <div class="stats">
+    <div class="stat"><span class="n">4,573</span><span class="k">standard references in force</span></div>
+    <div class="stat"><span class="n">926</span><span class="k">distinct standards</span></div>
+    <div class="stat"><span class="n">364</span><span class="k">used in 2+ jurisdictions</span></div>
+    <div class="stat"><span class="n">2,409</span><span class="k">provisions that cite a standard</span></div>
+    <div class="stat"><span class="n">14</span><span class="k">jurisdictions</span></div>
+  </div>
+  <p class="snipnote">Every figure on this site is drawn from the full text of all consolidated regulations of the ten provinces, three territories and the federal government, and counts only law currently in force.</p>
+
+  <h2>Four findings</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Finding</th><th class="n">Evidence</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Adopting the same standard does not mean imposing the same requirement.</strong> Jurisdictions pin different editions of it.</td><td class="n"><span class="big">10</span> editions of the elevator code CSA&nbsp;B44 in force across 11 jurisdictions</td></tr>
+      <tr><td><strong>Most regulations do not say whether later revisions of a standard apply.</strong> The answer then depends on a different statute, not on the regulation you are reading.</td><td class="n"><span class="big">81%</span> are silent on amendment</td></tr>
+      <tr><td><strong>Where Canadian law accepts a foreign standard as equivalent, it is almost always one jurisdiction acting alone.</strong></td><td class="n"><span class="big">71</span> of 72 equivalences exist in a single jurisdiction</td></tr>
+      <tr><td><strong>National model codes are adopted almost everywhere, then amended province by province.</strong></td><td class="n"><span class="big">126</span> article-level amendments to national codes</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Why it matters for trade inside Canada</h2>
+  <p>A product lawfully sold in one province can fail to be lawfully sold in another, not because the two governments disagree about safety but because they are pointing at different vintages of the same document. That is a barrier to internal trade that no one chose and that nothing in either regulation makes visible.</p>
+  <p>The purpose of this work is to make it visible — and to be specific enough about where it happens that it can be fixed.</p>
+
+  <div class="note plain">
+    <div class="hd">How to read this site</div>
+    <p>Tabs 01 to 04 set out the findings, each with the actual legislative text behind it. <strong>Tab 05 lets you search every reference</strong> by standard, jurisdiction or keyword and read the provision that cites it. Tab 06 states what this data cannot tell you, which matters as much as what it can.</p>
+  </div>
+</section>
+
+<!-- ============ 01 EDITIONS ============ -->
+<section class="panel" role="tabpanel" id="p-1" aria-labelledby="t-1" hidden>
+  <h2>The same standard, at different vintages</h2>
+  <p class="lede">CSA B44 is the safety code for elevators. Eleven Canadian jurisdictions have it in force. Between them they are running ten different editions of it, the oldest from 1975.</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>Standard</th><th class="n">Jurisdictions</th><th class="n">Editions in force</th><th>Span</th></tr></thead>
+    <tbody>
+      <tr><td>CSA B44 — elevators and escalators</td><td class="n">11</td><td class="n big">10</td><td class="mono">1975–2019</td></tr>
+      <tr><td>CSA B51 — boilers and pressure vessels</td><td class="n">12</td><td class="n">5</td><td class="mono">1995–2024</td></tr>
+      <tr><td>CSA C22.1 — Canadian Electrical Code</td><td class="n">10</td><td class="n">6</td><td class="mono">1986–2024</td></tr>
+      <tr><td>CSA B52 — mechanical refrigeration</td><td class="n">11</td><td class="n">3</td><td class="mono">2013–2023</td></tr>
+      <tr><td>CSA B149.1 — natural gas and propane</td><td class="n">11</td><td class="n">4</td><td class="mono">2000–2025</td></tr>
+      <tr><td>ASME A17.1 — elevators</td><td class="n">10</td><td class="n">4</td><td class="mono">2007–2019</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>CSA B44, as each jurisdiction actually writes it</h3>
+  <p>All of these are current law.</p>
+  <div class="snip"><div class="snip-tag">ON<span class="cite">R.R.O. 1990, Reg. 854</span></div><div class="snip-body">CSA Standard <span class="ed">B44-00</span>, “Safety Code for Elevators”.</div></div>
+  <div class="snip"><div class="snip-tag">PEI</div><div class="snip-body">CSA <span class="ed">B44-04</span>, Appendix J.</div></div>
+  <div class="snip"><div class="snip-tag">BC</div><div class="snip-body">CSA <span class="ed">B44-07</span>, Safety Code for Elevators and Escalators.</div></div>
+  <div class="snip"><div class="snip-tag">NB</div><div class="snip-body">CSA-<span class="ed">B44-10</span>, entitled Safety Code for Elevators and Escalators, except sections 5…</div></div>
+  <div class="snip"><div class="snip-tag">SK<span class="cite">P-4 Reg 3</span></div><div class="snip-body">CSA <span class="ed">B44-2013</span> Safety Code for Elevators and Escalators published by the American So[ciety]…</div></div>
+  <div class="snip"><div class="snip-tag">AB<span class="cite">Alta Reg 192/2015</span></div><div class="snip-body">CSA <span class="ed">B44: 19</span> Safety Code for Elevators and Escalators, published by the Canadian S[tandards Association]…</div></div>
+  <div class="snip"><div class="snip-tag">QC</div><div class="snip-body">CSA <span class="ed">B44:19</span>, Safety Code for Elevators and Escalators, published by CSA Group;</div></div>
+  <p class="snipnote">An elevator built to the 2019 edition is not automatically compliant in a jurisdiction still pinned to 2000 — though both will tell you they have adopted CSA B44. Note Saskatchewan attributing B44 to the American Society of Mechanical Engineers: B44 and ASME A17.1 are a harmonised binational code, and the drafting shows it.</p>
+
+  <h3>How old the referenced editions are</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Origin of the standard</th><th class="n">References naming an edition</th><th class="n">Median age</th><th class="n">90th percentile</th></tr></thead>
+    <tbody>
+      <tr><td>Canadian</td><td class="n">1,068</td><td class="n">17 yrs</td><td class="n">37 yrs</td></tr>
+      <tr><td>United States</td><td class="n">296</td><td class="n">16 yrs</td><td class="n">38 yrs</td></tr>
+      <tr><td>International (ISO, IEC)</td><td class="n">87</td><td class="n">20 yrs</td><td class="n">31 yrs</td></tr>
+      <tr><td>European</td><td class="n">50</td><td class="n">24 yrs</td><td class="n">29 yrs</td></tr>
+    </tbody>
+  </table></div>
+  <p>The oldest edition still in force is 62 years old. One in ten referenced editions is older than the regulator's own career.</p>
+
+  <div class="note">
+    <div class="hd">What this does not cover</div>
+    <p>Only a third of references name an edition at all — 1,527 of 4,573. The divergence above is measured on those. What the other two thirds bind to is the subject of the next tab.</p>
+  </div>
+</section>
+
+<!-- ============ 02 STATIC / AMBULATORY ============ -->
+<section class="panel" role="tabpanel" id="p-2" aria-labelledby="t-2" hidden>
+  <h2>Does the law follow the standard when it changes?</h2>
+  <p class="lede">When a standards body publishes a new edition, does the regulation that referenced the old one move with it? Most Canadian regulations do not say.</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>What the provision does</th><th class="n">References</th><th class="n">Share</th></tr></thead>
+    <tbody>
+      <tr><td>Names no edition and no amendment clause</td><td class="n">3,871</td><td class="n big">53%</td></tr>
+      <tr><td>Names an edition, says nothing further</td><td class="n">2,055</td><td class="n big">28%</td></tr>
+      <tr><td>Says later amendments apply — “as amended from time to time”</td><td class="n">1,297</td><td class="n">18%</td></tr>
+      <tr><td>Says the text is frozen — “as it read on”</td><td class="n">88</td><td class="n">1%</td></tr>
+    </tbody>
+  </table></div>
+  <p>So <strong>81% of references are silent</strong>. For those, whether a business must follow the newest edition is decided by the jurisdiction's Interpretation or Regulations Act, not by the regulation anyone is actually reading.</p>
+
+  <h3>What the two explicit forms look like</h3>
+  <div class="snip"><div class="snip-tag">AB<span class="cite">AR 111/2010</span></div><div class="snip-body">CSA Standard <span class="ed">B149.5:20</span>, Installation code for propane fuel systems and containers on motor vehicles, published in January 2020 by the Canadian Standards Association, is declared in force <mark>as amended or replaced from time to time</mark>.</div></div>
+  <p class="snipnote">Alberta names an edition and then follows the standard wherever it goes.</p>
+  <div class="snip"><div class="snip-tag">CA</div><div class="snip-body">CSA <span class="ed">C654-14</span> is a reference to that table <mark>as it read on the day on which the standard was published</mark>.</div></div>
+  <p class="snipnote">An explicit freeze. Only eight references in the whole corpus are this clear.</p>
+  <div class="snip"><div class="snip-tag">AB</div><div class="snip-body">CSA Standard <span class="ed">C22.1‑06</span>, Canadian Electrical Code, Part 1, Safety Standard for Electrical Installations;</div></div>
+  <p class="snipnote">And the common case: an edition named, and nothing said about what happens next.</p>
+
+  <h3>This is a drafting convention, and it varies enormously</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Jurisdiction</th><th class="n">YK</th><th class="n">NT</th><th class="n">CA</th><th class="n">NS</th><th class="n">MB</th><th class="n">BC</th><th class="n">SK</th><th class="n">AB</th><th class="n">NU</th><th class="n">ON</th><th class="n">QC</th><th class="n">NL</th><th class="n">NB</th><th class="n">PEI</th></tr></thead>
+    <tbody><tr><td>% that follow later amendments</td><td class="n">42</td><td class="n">41</td><td class="n">28</td><td class="n">25</td><td class="n">21</td><td class="n">20</td><td class="n">17</td><td class="n">16</td><td class="n">14</td><td class="n">14</td><td class="n">9</td><td class="n">5</td><td class="n">3</td><td class="n">2</td></tr></tbody>
+  </table></div>
+  <p>Prince Edward Island, New Brunswick and Newfoundland almost never write an amendment clause. Yukon, the Northwest Territories and the federal government write one routinely. The same CSA standard, adopted in the Northwest Territories and in PEI, can therefore drift apart over time for reasons that have nothing to do with the standard or with either government's view of it.</p>
+
+  <div class="note">
+    <div class="hd">The open question</div>
+    <p>Silence is not the same as a freeze. Resolving what the silent 81% actually bind to needs a reading of each jurisdiction's Interpretation or Regulations Act — fourteen separate legal questions, and the largest piece of unfinished work behind this site.</p>
+  </div>
+</section>
+
+<!-- ============ 03 GEOGRAPHY ============ -->
+<section class="panel" role="tabpanel" id="p-3" aria-labelledby="t-3" hidden>
+  <h2>When will Canadian law take a foreign standard instead?</h2>
+  <p class="lede">Sometimes a regulation names two standards and says either will do. That is a government stating, in law, that a foreign document meets its requirement — and it is the one place this data shows a choice rather than just a citation.</p>
+
+  <div class="stats">
+    <div class="stat"><span class="n">72</span><span class="k">documented equivalences</span></div>
+    <div class="stat"><span class="n">71</span><span class="k">exist in one jurisdiction only</span></div>
+    <div class="stat"><span class="n">2</span><span class="k">jurisdictions write 79% of them</span></div>
+    <div class="stat"><span class="n">6</span><span class="k">jurisdictions write none</span></div>
+  </div>
+
+  <h3>A worker's harness in Alberta</h3>
+  <div class="snip"><div class="snip-tag">AB<span class="cite">Alta Reg 191/2021</span></div><div class="snip-body">…is approved to (b) <span class="ed">EN 361: 2007</span>, Personal protective equipment against falls from a height — Full body harnesses, (c) <span class="ed">ANSI/ASSE Standard Z359.1‑2007</span>, Safety requirements for personal fall arrest systems, subsystems and components, <mark>or</mark> (d) <span class="ed">CSA Standard Z259.10‑18</span>, Full body harnesses.</div></div>
+  <p class="snipnote">European, American or Canadian certification — Alberta treats all three as meeting the same obligation. The same provisions also accept UIAA mountaineering standards.</p>
+
+  <h3>Direct counterparts, accepted as interchangeable</h3>
+  <div class="snip"><div class="snip-tag">AB</div><div class="snip-body"><span class="ed">CSA Standard Z195‑14</span>, Protective footwear, <mark>or</mark> (b) <span class="ed">ASTM Standard F2413‑05</span>.</div></div>
+  <div class="snip"><div class="snip-tag">BC</div><div class="snip-body"><span class="ed">ASME Standard B31.3</span>, <mark>or</mark> (b) <span class="ed">CSA Standard Z662</span>.</div></div>
+  <div class="snip"><div class="snip-tag">CA<span class="cite">SOR/2018-205</span></div><div class="snip-body"><span class="ed">CSA G40.21</span>, <span class="ed">ASTM A252</span> <mark>or</mark> <span class="ed">ASTM A500</span>.</div></div>
+  <p class="snipnote">Others in the set: head protection (CSA Z94.1 ↔ ANSI Z89.1), eye protection (Z94.3 ↔ ANSI Z87.1), ladders (Z11 ↔ ANSI A14.5), lift trucks (B335.1 ↔ ANSI B56.1).</p>
+
+  <h3>But recognition is not shared</h3>
+  <p>Of the 72 equivalences, <strong>71 exist in exactly one jurisdiction</strong>. Alberta writes 50 of the 102 individual pairings and the federal government 31; Nova Scotia, Newfoundland, the Northwest Territories, Nunavut, PEI and Yukon write none at all. One jurisdiction accepting an American standard tells you nothing about whether its neighbour will.</p>
+  <p>The single exception is <strong>ISO 3449 and SAE J1042</strong>, on falling-object protection for earthmoving machinery, which Alberta and Manitoba both offer as alternatives to each other.</p>
+
+  <h3>What is cited, by origin</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Origin</th><th class="n">References</th><th class="n">Distinct standards</th><th class="n">Jurisdictions</th></tr></thead>
+    <tbody>
+      <tr><td>Canadian designation</td><td class="n">4,525</td><td class="n">585</td><td class="n">14</td></tr>
+      <tr><td>United States</td><td class="n">2,051</td><td class="n">646</td><td class="n">14</td></tr>
+      <tr><td>International (ISO, IEC)</td><td class="n">542</td><td class="n">169</td><td class="n">12</td></tr>
+      <tr><td>European</td><td class="n">150</td><td class="n">56</td><td class="n">11</td></tr>
+    </tbody>
+  </table></div>
+  <p>Canadian standards are 62% of all references but only 40% of the distinct documents. American standards are the reverse — 28% of references, 44% of documents — because US bodies supply the long tail of test methods and material specifications, most cited once or twice. European standards are 2% of references, concentrated almost entirely in protective equipment.</p>
+
+  <div class="note alert">
+    <div class="hd">What these counts do not show</div>
+    <p>Nothing here says a government <em>preferred</em> a Canadian standard. A regulation citing ASTM D5373 may have weighed a Canadian option and declined it, or there may be no Canadian equivalent to weigh. The text records the choice made, never the choice available.</p>
+    <p>"Canadian" here also means Canadian-<em>designated</em>. CSA publishes standards jointly with American bodies, and <code>CAN/CSA-ISO</code> is ISO content under a Canadian number. B44 and ASME A17.1 are one document and appear on both sides of this table.</p>
+  </div>
+</section>
+
+<!-- ============ 04 MODEL CODES ============ -->
+<section class="panel" role="tabpanel" id="p-4" aria-labelledby="t-4" hidden>
+  <h2>National codes, adopted everywhere and amended locally</h2>
+  <p class="lede">Buildings, fire safety, plumbing, energy and electrical installation are not usually regulated standard by standard. A jurisdiction adopts a national model code in one stroke — and then writes its own amendments to it, article by article.</p>
+
+  <div class="stats">
+    <div class="stat"><span class="n">88</span><span class="k">provisions adopting a national code</span></div>
+    <div class="stat"><span class="n">13</span><span class="k">jurisdictions that adopt one</span></div>
+    <div class="stat"><span class="n">34</span><span class="k">provisions that amend one</span></div>
+    <div class="stat"><span class="n">126</span><span class="k">article-level amendments</span></div>
+  </div>
+
+  <h3>The six codes</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Code</th><th>Published by</th><th class="n">Jurisdictions referencing it</th></tr></thead>
+    <tbody>
+      <tr><td>National Building Code of Canada</td><td>National Research Council</td><td class="n">14</td></tr>
+      <tr><td>National Fire Code of Canada</td><td>National Research Council</td><td class="n">13</td></tr>
+      <tr><td>Canadian Electrical Code, Part I <span style="color:var(--ink-3)">(= CSA C22.1)</span></td><td>CSA Group</td><td class="n">13</td></tr>
+      <tr><td>National Plumbing Code of Canada</td><td>National Research Council</td><td class="n">10</td></tr>
+      <tr><td>National Energy Code for Buildings</td><td>National Research Council</td><td class="n">8</td></tr>
+      <tr><td>National Safety Code (motor carriers)</td><td>Council of Motor Transport Administrators</td><td class="n">2</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Who amends a national code, and how much</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Jurisdiction</th><th class="n">Adopting provisions</th><th class="n">Amending provisions</th><th class="n">Article-level amendments</th></tr></thead>
+    <tbody>
+      <tr><td>Manitoba</td><td class="n">11</td><td class="n">4</td><td class="n big">61</td></tr>
+      <tr><td>Nova Scotia</td><td class="n">14</td><td class="n">22</td><td class="n big">34</td></tr>
+      <tr><td>Yukon</td><td class="n">1</td><td class="n">5</td><td class="n">14</td></tr>
+      <tr><td>Quebec</td><td class="n">13</td><td class="n">1</td><td class="n">12</td></tr>
+      <tr><td>Nunavut</td><td class="n">9</td><td class="n">1</td><td class="n">3</td></tr>
+      <tr><td>Saskatchewan</td><td class="n">10</td><td class="n">1</td><td class="n">2</td></tr>
+      <tr><td>Alberta</td><td class="n">14</td><td class="n">0</td><td class="n">0</td></tr>
+      <tr><td>Others (BC, NB, NL, NT, ON, PEI)</td><td class="n">27</td><td class="n">0</td><td class="n">0</td></tr>
+    </tbody>
+  </table></div>
+  <p>Two different approaches are visible. Nova Scotia amends the national building code in many small, separate provisions. Manitoba does it in a handful of long ones — a single Manitoba provision rewrites 33 articles at once.</p>
+
+  <h3>What an amendment looks like</h3>
+  <div class="snip"><div class="snip-tag">NS<span class="cite">NBC variation</span></div><div class="snip-body">Sentence 9.1.1.1.(2) (Application) of Division B of National Building Code <mark>added</mark> …</div></div>
+  <div class="snip"><div class="snip-tag">MB<span class="cite">33 amendments in one provision</span></div><div class="snip-body">Division A is <mark>amended</mark> by this section. Sentence 1.1.1.1.(3) is <mark>repealed</mark>. Article 1.3.3.1. is <mark>replaced</mark> with the following…</div></div>
+
+  <h3>Several jurisdictions redirect the national code to their own</h3>
+  <div class="snip"><div class="snip-tag">MB</div><div class="snip-body">A reference in this Code to the National Building Code of Canada, the National Building Code or the NBC <mark>is deemed to be a reference to the most recent version of the Manitoba Building Code</mark> made under The Buildings Act.</div></div>
+  <div class="snip"><div class="snip-tag">BC</div><div class="snip-body">“National Building Code of Canada” … <mark>mean the British Columbia Building Code</mark> and local building bylaws.</div></div>
+  <p class="snipnote">So the chain has three links: a national code, a provincial code derived from it, and the regulation that gives the provincial one force. Provincial codes named in regulation include those of British Columbia, Alberta, Ontario, Nova Scotia, Manitoba and Quebec.</p>
+
+  <h3>Read the adoptions and amendments</h3>
+  <div class="controls">
+    <div class="ctl-row">
+      <div>
+        <label class="fl" for="cj">Jurisdiction</label>
+        <select id="cj"><option value="">All jurisdictions</option></select>
+      </div>
+      <div>
+        <label class="fl" for="ck">Code</label>
+        <select id="ck"><option value="">All codes</option></select>
+      </div>
+      <div>
+        <label class="fl" for="cr">Type</label>
+        <select id="cr">
+          <option value="">Adoptions and amendments</option>
+          <option value="adoption">Adoptions only</option>
+          <option value="variation">Amendments only</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="resbar"><span><b id="crc">—</b> provisions</span><span id="crs"></span></div>
+  <div id="cresults"></div>
+
+  <div class="note">
+    <div class="hd">Two things to know about these numbers</div>
+    <p><strong>Adopting a code brings in standards this site cannot see.</strong> The National Building Code itself references hundreds of further standards. Those documents are not public law and are not in our corpus, so a standard a jurisdiction picks up only by adopting the building code does not appear anywhere on this site. CSA's own tracking counts 1,081 distinct CSA standards referenced by Canadian governments; working from regulation text alone we find 350.</p>
+    <p><strong>Zero amendments does not mean no amendments.</strong> Alberta and British Columbia amend through their own provincial codes, which are separate documents. The counts above record what is visible in regulation text.</p>
+  </div>
+</section>
+
+<!-- ============ 05 SEARCH ============ -->
+<section class="panel" role="tabpanel" id="p-5" aria-labelledby="t-5" hidden>
+  <h2>Search every standard reference</h2>
+  <p class="lede">All 4,573 references in force, with the provision that cites each one. Search by standard number, body, keyword or regulation title, and filter by jurisdiction.</p>
+
+  <div class="controls">
+    <div>
+      <label class="fl" for="q">Search standard, body, regulation or text</label>
+      <input type="search" id="q" placeholder="B44, elevator, ASTM, propane, Z259…" autocomplete="off">
+    </div>
+    <div class="ctl-row">
+      <div>
+        <label class="fl" for="fb">Standards body</label>
+        <select id="fb"><option value="">All bodies</option></select>
+      </div>
+      <div>
+        <label class="fl" for="fm">What the citation binds</label>
+        <select id="fm">
+          <option value="">Any</option>
+          <option value="ambulatory">Follows later amendments</option>
+          <option value="edition only">Names an edition only</option>
+          <option value="static">Explicitly frozen</option>
+          <option value="unqualified">No edition, no clause</option>
+        </select>
+      </div>
+      <div>
+        <label class="fl" for="fe">Edition named</label>
+        <select id="fe">
+          <option value="">Any</option>
+          <option value="yes">Has an edition</option>
+          <option value="no">No edition</option>
+          <option value="old">Edition before 2000</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <label class="fl">Jurisdiction</label>
+      <div class="chips" id="fj"></div>
+    </div>
+  </div>
+
+  <div class="resbar">
+    <span><b id="rc">—</b> references</span>
+    <span id="rs"></span>
+    <button class="reset" id="rb" type="button">Clear all filters</button>
+  </div>
+  <div id="results"></div>
+</section>
+
+<!-- ============ 06 METHOD ============ -->
+<section class="panel" role="tabpanel" id="p-6" aria-labelledby="t-6" hidden>
+  <h2>How this was built, and what it cannot tell you</h2>
+  <p class="lede">The corpus is the full text of every consolidated regulation of the ten provinces, three territories and the federal government — 21,318 regulations, 754,071 provisions. A rule-based extraction identifies each place a regulation refers to an external technical standard and records which standard, which edition, and on what terms.</p>
+
+  <h3>Method in brief</h3>
+  <ul>
+    <li>A register of <strong>43 standards bodies</strong> drives a high-recall screen over every provision; a reference is only recorded where a well-formed standard designation follows the body's name.</li>
+    <li>Designations are normalised so that <code>CAN/CSA-B149.1-15</code>, <code>CSA B149.1</code> and <code>CSA Standard B149.1:20</code> resolve to one standard, with the edition kept in a separate field. Collapsing the edition into the identity would make two vintages look like two standards; dropping it would make them look identical. Neither is true.</li>
+    <li>Reaffirmation is held apart from edition: a 1981 standard reaffirmed in 2005 is still the 1981 text.</li>
+    <li>Figures are reported for law <strong>in force</strong>, excluding schedules and superseded consolidations. Including repealed instruments inflates edition divergence, because repealed law disproportionately cites superseded editions.</li>
+  </ul>
+
+  <h3>Limitations, in order of how much they matter</h3>
+  <div class="issues">
+    <div class="issue"><span class="sev major">Largest</span><div class="txt"><b>Standards reached only through an adopted code are invisible</b>88 provisions adopt a national model code outright. Those codes each reference hundreds of further standards and are not themselves public law, so a standard a jurisdiction picks up only by adopting the building code appears nowhere here. CSA counts 1,081 distinct CSA standards referenced by governments; from regulation text we find 350.</div></div>
+    <div class="issue"><span class="sev major">Largest</span><div class="txt"><b>That gap differs by jurisdiction, so it distorts comparison</b>A jurisdiction that adopts a model code wholesale looks standards-light beside one that writes the same technical content into its own regulations. The difference is a drafting choice, not a difference in regulatory burden, and it cannot be corrected by subtracting a constant.</div></div>
+    <div class="issue"><span class="sev limits">Substantial</span><div class="txt"><b>Silence about amendment is unresolved</b>81% of references do not say whether later editions apply. The answer lies in each jurisdiction's Interpretation or Regulations Act, which is outside this corpus. Until that is read, the scale of edition divergence has a floor and a ceiling but not a figure.</div></div>
+    <div class="issue"><span class="sev limits">Substantial</span><div class="txt"><b>Only the most-used standards have been audited by hand</b>The 30 most widely adopted standards were checked line by line against the source text. The remaining 896 have not been. Spot checks are clean and two independent trackers corroborate the reference totals, but precision across the whole set is estimated rather than established.</div></div>
+    <div class="issue"><span class="sev limits">Substantial</span><div class="txt"><b>A standards body missing from the register produces a confident wrong answer</b>Not an error — a wrong number with nothing to flag it. The register held the US vehicle standard FMVSS but not its Canadian counterpart CMVSS, and every Canada/US comparison understated the Canadian side by 143 references until that was found. Twelve bodies were added after a systematic sweep; others may remain.</div></div>
+    <div class="issue"><span class="sev known">Known</span><div class="txt"><b>"Canadian" means Canadian-designated, not Canadian-originated</b>CSA publishes standards jointly with American bodies, ULC is a UL company, and <code>CAN/CSA-ISO</code> is ISO content under a Canadian number. Whether a CSA-designated standard is Canadian in content is coded for 30 standards only.</div></div>
+    <div class="issue"><span class="sev known">Known</span><div class="txt"><b>Some standards carry two identities</b>The Canadian Electrical Code <em>is</em> CSA C22.1. ASME A17.1 and CSA B44 are one harmonised binational code. ASSE was renamed ASSP in 2018. These are recorded as aliases rather than merged, so any count by body is affected.</div></div>
+    <div class="issue"><span class="sev known">Known</span><div class="txt"><b>Equivalences are a floor, not a census</b>The 72 documented equivalences are those drafted as explicit alternatives with lettered options. Equivalences written in running prose are missed. The finding that only one is shared between jurisdictions rests on this floor and should be re-tested as coverage improves.</div></div>
+  </div>
+
+  <h3>External corroboration</h3>
+  <p>Two independent trackers can be compared against this data. The Standards Council of Canada reported 2,125 references to CSA standards in Canadian regulation as of March 2025; this extraction finds 2,035 in force — within 4%. An estimate of roughly 5,000 references across all standards bodies compares with 4,573 here. Reference volume agrees; the count of distinct standards does not, for the reason given at the top of the limitations list.</p>
+
+  <h3>Reproducibility</h3>
+  <p>Every figure comes from release <code>2026_1.1</code> of the corpus, frozen 15 October 2026 with a hash manifest, so any number here can be traced to an exact state of the law. Each output file records the release it was built from.</p>
+</section>
+
+<footer class="foot">
+  Interprovincial Trade Project · Faculty of Law, University of Ottawa · Prof. Wolfgang Alschner<br>
+  Corpus release 2026_1.1, frozen 15 October 2026 · 21,318 regulations · 754,071 provisions · 14 jurisdictions<br>
+  Figures cover law in force, excluding schedules and superseded consolidations. Research in progress — see Method &amp; limits before citing.
+</footer>
+</div>
+
+<script src="data.js"></script>
+<script>
+(function(){
+  /* ---------- tabs ---------- */
+  var tabs = [].slice.call(document.querySelectorAll('.tab'));
+  function show(i){
+    tabs.forEach(function(t,j){
+      t.setAttribute('aria-selected', j===i?'true':'false');
+      document.getElementById('p-'+j).hidden = (j!==i);
+    });
+    try{ localStorage.setItem('std-tab', String(i)); }catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click', function(){ show(i); });
+    t.addEventListener('keydown', function(e){
+      var d = e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d) return; e.preventDefault();
+      var k=(i+d+tabs.length)%tabs.length; tabs[k].focus(); show(k);
+    });
+  });
+  var saved=0;
+  try{ var v=localStorage.getItem('std-tab'); if(v!==null) saved=Math.min(tabs.length-1,Math.max(0,parseInt(v,10)||0)); }catch(e){}
+  show(saved);
+
+  /* ---------- explorer ---------- */
+  var R = window.REFS;
+  if(!R || !R.p){ document.getElementById('results').innerHTML =
+    '<div class="empty">The reference data did not load.</div>'; return; }
+  var N = R.p.length;
+
+  // One lowercase haystack per row, built once. 4,573 rows is small enough that
+  // a linear scan per keystroke is faster than maintaining an index.
+  var hay = new Array(N);
+  for(var i=0;i<N;i++){
+    hay[i] = (R.s[i]+' '+R.b[i]+' '+R.d[i]+' '+R.c[i]+' '+R.t[i]+' '+R.x[i]).toLowerCase();
+  }
+
+  var JUR = ['AB','BC','MB','NB','NL','NS','NT','NU','ON','PEI','QC','SK','YK','CA'];
+  var JURNAME = {AB:'Alberta',BC:'British Columbia',MB:'Manitoba',NB:'New Brunswick',
+    NL:'Newfoundland and Labrador',NS:'Nova Scotia',NT:'Northwest Territories',NU:'Nunavut',
+    ON:'Ontario',PEI:'Prince Edward Island',QC:'Quebec',SK:'Saskatchewan',YK:'Yukon',CA:'Federal'};
+  var picked = Object.create(null);
+
+  var jurBox = document.getElementById('fj');
+  JUR.forEach(function(j){
+    var b=document.createElement('button');
+    b.type='button'; b.className='chip'; b.setAttribute('aria-pressed','false');
+    b.textContent = j==='CA' ? 'Federal' : j;
+    b.title = JURNAME[j];
+    b.addEventListener('click', function(){
+      if(picked[j]){ delete picked[j]; b.setAttribute('aria-pressed','false'); }
+      else { picked[j]=1; b.setAttribute('aria-pressed','true'); }
+      render();
+    });
+    jurBox.appendChild(b);
+  });
+
+  var counts={};
+  for(var i2=0;i2<N;i2++){ counts[R.b[i2]] = (counts[R.b[i2]]||0)+1; }
+  var bodies = Object.keys(counts).sort(function(a,b){ return counts[b]-counts[a] || a.localeCompare(b); });
+  var sel=document.getElementById('fb');
+  bodies.forEach(function(b){
+    var o=document.createElement('option'); o.value=b; o.textContent=b+'  ('+counts[b]+')'; sel.appendChild(o);
+  });
+
+  var q=document.getElementById('q'), fb=document.getElementById('fb'),
+      fm=document.getElementById('fm'), fe=document.getElementById('fe'),
+      rc=document.getElementById('rc'), rs=document.getElementById('rs'),
+      box=document.getElementById('results');
+  var CAP=200;
+
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function hl(s, term){
+    var e = esc(s);
+    if(!term) return e;
+    try{
+      var rx = new RegExp('('+term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
+      return e.replace(rx,'<mark>$1</mark>');
+    }catch(err){ return e; }
+  }
+
+  function render(){
+    var term=q.value.trim().toLowerCase(), body=fb.value, mode=fm.value, ed=fe.value;
+    var anyJ=false; for(var k in picked){ anyJ=true; break; }
+    var out=[], n=0, jset={};
+    for(var i=0;i<N;i++){
+      if(anyJ && !picked[R.p[i]]) continue;
+      if(body && R.b[i]!==body) continue;
+      if(mode && R.m[i]!==mode) continue;
+      if(ed==='yes' && !R.e[i]) continue;
+      if(ed==='no'  && R.e[i]) continue;
+      if(ed==='old' && !(R.e[i] && +R.e[i] < 2000)) continue;
+      if(term && hay[i].indexOf(term)===-1) continue;
+      n++; jset[R.p[i]]=1;
+      if(out.length<CAP) out.push(i);
+    }
+    rc.textContent = n.toLocaleString();
+    var nj=Object.keys(jset).length;
+    rs.textContent = n ? ('across '+nj+' jurisdiction'+(nj===1?'':'s')
+      + (n>CAP ? ' · showing the first '+CAP : '')) : '';
+    if(!n){
+      box.innerHTML='<div class="empty">No references match. Try a shorter term, or clear a filter.</div>';
+      return;
+    }
+    var h=[];
+    out.forEach(function(i){
+      var pills='<span class="hit-pill j">'+esc(R.p[i]==='CA'?'Federal':R.p[i])+'</span>';
+      if(R.e[i]) pills+='<span class="hit-pill">ed. '+esc(R.e[i])+'</span>';
+      pills+='<span class="hit-pill'+(R.m[i]==='ambulatory'?' amb':'')+'">'+esc(R.m[i])+'</span>';
+      var src=[R.t[i],R.c[i]].filter(Boolean).join(' · ');
+      h.push('<article class="hit"><div class="hit-top"><span class="hit-std">'
+        + hl(R.s[i],term) + '</span>' + pills + '</div>'
+        + (src?'<div class="hit-src">'+hl(src,term)+'</div>':'')
+        + '<div class="hit-txt">'+hl(R.x[i],term)+'</div></article>');
+    });
+    box.innerHTML=h.join('');
+  }
+
+  /* ---------- model-code reader (tab 04) ---------- */
+  var C = window.CODES;
+  if(C && C.p){
+    var CN = C.p.length;
+    var CODENAME = {NBC:'National Building Code', NFC:'National Fire Code',
+      NPC:'National Plumbing Code', NECB:'National Energy Code for Buildings',
+      CEC:'Canadian Electrical Code', 'NSC:10':'National Safety Code 10',
+      'NSC:13':'National Safety Code 13'};
+    var cj=document.getElementById('cj'), ck=document.getElementById('ck'),
+        cr=document.getElementById('cr'), crc=document.getElementById('crc'),
+        crs=document.getElementById('crs'), cbox=document.getElementById('cresults');
+    var js={}, ks={};
+    for(var ci=0;ci<CN;ci++){ js[C.p[ci]]=1; ks[C.k[ci]]=1; }
+    Object.keys(js).sort().forEach(function(j){
+      var o=document.createElement('option'); o.value=j;
+      o.textContent = j==='CA' ? 'Federal' : (JURNAME[j]||j); cj.appendChild(o);
+    });
+    Object.keys(ks).sort().forEach(function(k){
+      var o=document.createElement('option'); o.value=k;
+      o.textContent = CODENAME[k]||k; ck.appendChild(o);
+    });
+    function crender(){
+      var fj2=cj.value, fk=ck.value, fr=cr.value, rows=[], n=0;
+      for(var i=0;i<CN;i++){
+        if(fj2 && C.p[i]!==fj2) continue;
+        if(fk && C.k[i]!==fk) continue;
+        if(fr && C.role[i]!==fr) continue;
+        n++; if(rows.length<120) rows.push(i);
+      }
+      crc.textContent=n.toLocaleString();
+      crs.textContent = n>120 ? 'showing the first 120' : '';
+      if(!n){ cbox.innerHTML='<div class="empty">No provisions match those filters.</div>'; return; }
+      var h=[];
+      rows.forEach(function(i){
+        var pills='<span class="hit-pill j">'+esc(C.p[i]==='CA'?'Federal':C.p[i])+'</span>';
+        pills+='<span class="hit-pill">'+esc(C.role[i]==='adoption'?'adopts':'amends')+'</span>';
+        if(C.role[i]==='variation' && C.na[i]) pills+='<span class="hit-pill amb">'+C.na[i]+' article'+(C.na[i]===1?'':'s')+'</span>';
+        if(C.e[i]) pills+='<span class="hit-pill">ed. '+esc(C.e[i])+'</span>';
+        if(C.m[i]==='ambulatory') pills+='<span class="hit-pill amb">follows amendments</span>';
+        h.push('<article class="hit"><div class="hit-top"><span class="hit-std">'
+          + esc(CODENAME[C.k[i]]||C.k[i]) + '</span>' + pills + '</div>'
+          + (C.c[i]?'<div class="hit-src">'+esc(C.c[i])+'</div>':'')
+          + '<div class="hit-txt">'+esc(C.x[i])+'</div></article>');
+      });
+      cbox.innerHTML=h.join('');
+    }
+    [cj,ck,cr].forEach(function(el){ el.addEventListener('change',crender); });
+    crender();
+  }
+
+  var timer=null;
+  function deb(){ clearTimeout(timer); timer=setTimeout(render,130); }
+  q.addEventListener('input',deb);
+  [fb,fm,fe].forEach(function(el){ el.addEventListener('change',render); });
+  document.getElementById('rb').addEventListener('click',function(){
+    q.value=''; fb.value=''; fm.value=''; fe.value='';
+    picked=Object.create(null);
+    [].slice.call(jurBox.querySelectorAll('.chip')).forEach(function(c){ c.setAttribute('aria-pressed','false'); });
+    render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>

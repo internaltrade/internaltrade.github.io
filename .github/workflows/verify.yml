@@ -1,0 +1,19 @@
+name: verify-release-pin
+
+# Enforce the "one release, everywhere" rule on every push and PR: the site must
+# never show data from one corpus release under another release's label.
+# See UPDATING.md for the full protocol.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check release consistency
+        run: bash scripts/verify_release.sh

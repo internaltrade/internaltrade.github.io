@@ -1,0 +1,7 @@
+# OS / editor cruft — never publish these
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/

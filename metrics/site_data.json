@@ -1,0 +1,2820 @@
+{
+  "meta": {
+    "release": "2026_1.1",
+    "generated": "2026-10-27",
+    "cut": "English, in force, consolidated, non-superseded, >=100 body words",
+    "n_docs_cut": 13703,
+    "regdata_version": "regdata-v1 (restrictions inflated ~12.4% vs pending v2)",
+    "dimensions_version": "semantic-v1 (Alschner/Zachar/Pontello 2018 wordlists)",
+    "note_body_only": "Schedules (fee tables, forms) excluded from all measures."
+  },
+  "provinces": [
+    {
+      "prov": "AB",
+      "docs": 820,
+      "body_words": 2831544,
+      "restrictions_density": 10.076,
+      "permissive_density": 5.791,
+      "obligations_density": 1.556,
+      "outdated_refs_density": 4.245,
+      "restrictions_total": 28532,
+      "obligations_total": 4406,
+      "permissive_total": 16397,
+      "outdated_refs_total": 12021,
+      "prescriptivity": 1.788,
+      "exceptions_idx": 0.278,
+      "discretions_idx": 0.178,
+      "legal_jargon_idx": 0.177,
+      "cross_ref_idx": 1.835,
+      "outdated_words_idx": 0.554,
+      "age_years_median": null,
+      "age_coverage": 0,
+      "name": "Alberta"
+    },
+    {
+      "prov": "BC",
+      "docs": 1157,
+      "body_words": 2775394,
+      "restrictions_density": 9.384,
+      "permissive_density": 3.807,
+      "obligations_density": 1.892,
+      "outdated_refs_density": 1.021,
+      "restrictions_total": 26043,
+      "obligations_total": 5251,
+      "permissive_total": 10566,
+      "outdated_refs_total": 2833,
+      "prescriptivity": 2.499,
+      "exceptions_idx": 0.299,
+      "discretions_idx": 0.18,
+      "legal_jargon_idx": 0.071,
+      "cross_ref_idx": 2.08,
+      "outdated_words_idx": 0.546,
+      "age_years_median": 0.2,
+      "age_coverage": 0.996,
+      "name": "British Columbia"
+    },
+    {
+      "prov": "CA",
+      "docs": 2121,
+      "body_words": 2419747,
+      "restrictions_density": 13.726,
+      "permissive_density": 4.322,
+      "obligations_density": 1.307,
+      "outdated_refs_density": 2.18,
+      "restrictions_total": 33214,
+      "obligations_total": 3163,
+      "permissive_total": 10458,
+      "outdated_refs_total": 5276,
+      "prescriptivity": 3.015,
+      "exceptions_idx": 0.305,
+      "discretions_idx": 0.171,
+      "legal_jargon_idx": 0.22,
+      "cross_ref_idx": 1.631,
+      "outdated_words_idx": 0.532,
+      "age_years_median": 1.2,
+      "age_coverage": 1,
+      "name": "Federal (Canada)"
+    },
+    {
+      "prov": "MB",
+      "docs": 973,
+      "body_words": 2009194,
+      "restrictions_density": 10.038,
+      "permissive_density": 4.721,
+      "obligations_density": 1.466,
+      "outdated_refs_density": 4.357,
+      "restrictions_total": 20169,
+      "obligations_total": 2945,
+      "permissive_total": 9485,
+      "outdated_refs_total": 8755,
+      "prescriptivity": 2.086,
+      "exceptions_idx": 0.298,
+      "discretions_idx": 0.182,
+      "legal_jargon_idx": 0.146,
+      "cross_ref_idx": 1.67,
+      "outdated_words_idx": 0.533,
+      "age_years_median": null,
+      "age_coverage": 0,
+      "name": "Manitoba"
+    },
+    {
+      "prov": "NB",
+      "docs": 532,
+      "body_words": 1914435,
+      "restrictions_density": 10.311,
+      "permissive_density": 3.876,
+      "obligations_density": 1.271,
+      "outdated_refs_density": 3.036,
+      "restrictions_total": 19739,
+      "obligations_total": 2434,
+      "permissive_total": 7420,
+      "outdated_refs_total": 5812,
+      "prescriptivity": 2.474,
+      "exceptions_idx": 0.218,
+      "discretions_idx": 0.131,
+      "legal_jargon_idx": 0.064,
+      "cross_ref_idx": 1.639,
+      "outdated_words_idx": 0.552,
+      "age_years_median": null,
+      "age_coverage": 0,
+      "name": "New Brunswick"
+    },
+    {
+      "prov": "NL",
+      "docs": 1075,
+      "body_words": 1395826,
+      "restrictions_density": 14.586,
+      "permissive_density": 4.981,
+      "obligations_density": 1.693,
+      "outdated_refs_density": 2.051,
+      "restrictions_total": 20359,
+      "obligations_total": 2363,
+      "permissive_total": 6952,
+      "outdated_refs_total": 2863,
+      "prescriptivity": 2.741,
+      "exceptions_idx": 0.206,
+      "discretions_idx": 0.198,
+      "legal_jargon_idx": 0.168,
+      "cross_ref_idx": 1.366,
+      "outdated_words_idx": 0.477,
+      "age_years_median": null,
+      "age_coverage": 0,
+      "name": "Newfoundland & Labrador"
+    },
+    {
+      "prov": "NS",
+      "docs": 1310,
+      "body_words": 2114327,
+      "restrictions_density": 13.876,
+      "permissive_density": 5.5,
+      "obligations_density": 2.199,
+      "outdated_refs_density": 2.102,
+      "restrictions_total": 29338,
+      "obligations_total": 4649,
+      "permissive_total": 11629,
+      "outdated_refs_total": 4445,
+      "prescriptivity": 2.617,
+      "exceptions_idx": 0.248,
+      "discretions_idx": 0.214,
+      "legal_jargon_idx": 0.151,
+      "cross_ref_idx": 1.494,
+      "outdated_words_idx": 0.674,
+      "age_years_median": 9.5,
+      "age_coverage": 0.399,
+      "name": "Nova Scotia"
+    },
+    {
+      "prov": "NT",
+      "docs": 453,
+      "body_words": 1182524,
+      "restrictions_density": 11.862,
+      "permissive_density": 5.213,
+      "obligations_density": 1.616,
+      "outdated_refs_density": 0.733,
+      "restrictions_total": 14027,
+      "obligations_total": 1911,
+      "permissive_total": 6165,
+      "outdated_refs_total": 867,
+      "prescriptivity": 2.259,
+      "exceptions_idx": 0.267,
+      "discretions_idx": 0.211,
+      "legal_jargon_idx": 0.085,
+      "cross_ref_idx": 1.518,
+      "outdated_words_idx": 0.581,
+      "age_years_median": 8.6,
+      "age_coverage": 1,
+      "name": "Northwest Territories"
+    },
+    {
+      "prov": "NU",
+      "docs": 169,
+      "body_words": 308808,
+      "restrictions_density": 14.705,
+      "permissive_density": 4.33,
+      "obligations_density": 1.962,
+      "outdated_refs_density": 0.725,
+      "restrictions_total": 4541,
+      "obligations_total": 606,
+      "permissive_total": 1337,
+      "outdated_refs_total": 224,
+      "prescriptivity": 3.305,
+      "exceptions_idx": 0.306,
+      "discretions_idx": 0.254,
+      "legal_jargon_idx": 0.073,
+      "cross_ref_idx": 1.732,
+      "outdated_words_idx": 0.476,
+      "age_years_median": null,
+      "age_coverage": 0,
+      "name": "Nunavut"
+    },
+    {
+      "prov": "ON",
+      "docs": 2033,
+      "body_words": 7273862,
+      "restrictions_density": 9.501,
+      "permissive_density": 2.926,
+      "obligations_density": 1.563,
+      "outdated_refs_density": 3.544,
+      "restrictions_total": 69111,
+      "obligations_total": 11367,
+      "permissive_total": 21280,
+      "outdated_refs_total": 25782,
+      "prescriptivity": 3.127,
+      "exceptions_idx": 0.226,
+      "discretions_idx": 0.137,
+      "legal_jargon_idx": 0.062,
+      "cross_ref_idx": 2.408,
+      "outdated_words_idx": 0.43,
+      "age_years_median": 5.2,
+      "age_coverage": 1,
+      "name": "Ontario"
+    },
+    {
+      "prov": "PEI",
+      "docs": 367,
+      "body_words": 853029,
+      "restrictions_density": 14.031,
+      "permissive_density": 4.687,
+      "obligations_density": 1.71,
+      "outdated_refs_density": 1.946,
+      "restrictions_total": 11969,
+      "obligations_total": 1459,
+      "permissive_total": 3998,
+      "outdated_refs_total": 1660,
+      "prescriptivity": 2.95,
+      "exceptions_idx": 0.272,
+      "discretions_idx": 0.171,
+      "legal_jargon_idx": 0.301,
+      "cross_ref_idx": 1.713,
+      "outdated_words_idx": 0.568,
+      "age_years_median": 8.1,
+      "age_coverage": 1,
+      "name": "Prince Edward Island"
+    },
+    {
+      "prov": "QC",
+      "docs": 1451,
+      "body_words": 4310871,
+      "restrictions_density": 12.662,
+      "permissive_density": 4.273,
+      "obligations_density": 1.321,
+      "outdated_refs_density": 1.298,
+      "restrictions_total": 54586,
+      "obligations_total": 5693,
+      "permissive_total": 18419,
+      "outdated_refs_total": 5595,
+      "prescriptivity": 3.336,
+      "exceptions_idx": 0.218,
+      "discretions_idx": 0.144,
+      "legal_jargon_idx": 0.128,
+      "cross_ref_idx": 1.778,
+      "outdated_words_idx": 0.566,
+      "age_years_median": null,
+      "age_coverage": 0,
+      "name": "Quebec"
+    },
+    {
+      "prov": "SK",
+      "docs": 599,
+      "body_words": 2319077,
+      "restrictions_density": 8.759,
+      "permissive_density": 4.994,
+      "obligations_density": 1.742,
+      "outdated_refs_density": 5.701,
+      "restrictions_total": 20313,
+      "obligations_total": 4040,
+      "permissive_total": 11581,
+      "outdated_refs_total": 13220,
+      "prescriptivity": 1.774,
+      "exceptions_idx": 0.282,
+      "discretions_idx": 0.22,
+      "legal_jargon_idx": 0.72,
+      "cross_ref_idx": 1.914,
+      "outdated_words_idx": 0.593,
+      "age_years_median": 3.2,
+      "age_coverage": 1,
+      "name": "Saskatchewan"
+    },
+    {
+      "prov": "YK",
+      "docs": 643,
+      "body_words": 815074,
+      "restrictions_density": 12.277,
+      "permissive_density": 4.804,
+      "obligations_density": 1.394,
+      "outdated_refs_density": 3.689,
+      "restrictions_total": 10007,
+      "obligations_total": 1136,
+      "permissive_total": 3916,
+      "outdated_refs_total": 3007,
+      "prescriptivity": 2.527,
+      "exceptions_idx": 0.26,
+      "discretions_idx": 0.163,
+      "legal_jargon_idx": 0.175,
+      "cross_ref_idx": 1.79,
+      "outdated_words_idx": 0.537,
+      "age_years_median": 5.8,
+      "age_coverage": 1,
+      "name": "Yukon"
+    }
+  ],
+  "rankings": {
+    "restrictions_density": [
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "GENERAL",
+        "citation": "O. Reg. 61/16",
+        "enabling_act": "Horse Racing Licence Act, 2015",
+        "words": 640,
+        "value": 56.25
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "91-57 - Forms",
+        "citation": "",
+        "enabling_act": "Provincial Offences Procedure Act",
+        "words": 949,
+        "value": 53.74
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Industrial and Construction Camps Regulations",
+        "citation": "40/42",
+        "enabling_act": "Health Protection Act",
+        "words": 1078,
+        "value": 49.17
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "CODE OF CONDUCT",
+        "citation": "O. Reg. 445/19",
+        "enabling_act": "Provincial Animal Welfare Services Act, 2019",
+        "words": 726,
+        "value": 48.21
+      },
+      {
+        "prov": "NL",
+        "name": "Newfoundland & Labrador",
+        "title": "Video Lottery Regulations",
+        "citation": "NLR 760/96",
+        "enabling_act": "Lotteries Act",
+        "words": 728,
+        "value": 48.08
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "85-182 - Horse and Pony Hauling Contests",
+        "citation": "",
+        "enabling_act": "Society for the Prevention of Cruelty to Animals Act",
+        "words": 773,
+        "value": 47.87
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "FOOD TERMINAL RULES",
+        "citation": "O. Reg. 148/22",
+        "enabling_act": "Ontario Food Terminal Act",
+        "words": 815,
+        "value": 47.85
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "C-68.01, r. 2 - Code of Ethics for Coroners",
+        "citation": "",
+        "enabling_act": "Coroners Act",
+        "words": 989,
+        "value": 47.52
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Commercial Vehicle Maintenance Standards",
+        "citation": "296/90",
+        "enabling_act": "Motor Vehicle Act",
+        "words": 5341,
+        "value": 46.99
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "2009-140 - Abattoir",
+        "citation": "",
+        "enabling_act": "Public Health Act",
+        "words": 570,
+        "value": 43.86
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Regulations",
+        "citation": "141/2025",
+        "enabling_act": "Environment Act",
+        "words": 2201,
+        "value": 43.62
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Alberta Fishery Regulations, 1998",
+        "citation": "SOR/98-246",
+        "enabling_act": "FISHERIES ACT",
+        "words": 1674,
+        "value": 43.61
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "O-6, r. 11 - Regulation respecting the conciliation and arbitration procedure for the accounts of members of the Ordre des opticiens d’ordonnances du Québec",
+        "citation": "",
+        "enabling_act": "Dispensing Opticians Act; Professional Code",
+        "words": 1240,
+        "value": 43.55
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "O-7, r. 16 - Regulation respecting the conciliation and arbitration procedure for the accounts of members of the Ordre des optométristes du Québec",
+        "citation": "",
+        "enabling_act": "Optometry Act; Professional Code",
+        "words": 1241,
+        "value": 43.51
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Milk Production, Transportation and Pasteurization Regulations",
+        "citation": "54/66",
+        "enabling_act": "Health Protection Act",
+        "words": 3012,
+        "value": 43.49
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "A-23, r. 13 - Regulation respecting the conciliation and arbitration procedure for the accounts of members of the Ordre des arpenteurs-géomètres du Québec",
+        "citation": "",
+        "enabling_act": "Land Surveyors Act; Professional Code",
+        "words": 1359,
+        "value": 43.41
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "D-4, r. 12 - Regulation respecting the conciliation and arbitration procedure for the accounts of members of the Ordre des denturologistes du Québec",
+        "citation": "",
+        "enabling_act": "Denturologists Act; Professional Code",
+        "words": 1247,
+        "value": 43.3
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "C-26, r. 278 - Regulation respecting the conciliation and arbitration procedure for the accounts of members of the Ordre des traducteurs, terminologues et interprètes agréés du Québec",
+        "citation": "",
+        "enabling_act": "Professional Code",
+        "words": 1201,
+        "value": 43.3
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "C-24.2, r. 51 - Regulation respecting road vehicles adapted for the transportation of handicapped persons",
+        "citation": "",
+        "enabling_act": "Highway Safety Code",
+        "words": 3942,
+        "value": 42.87
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "C-26, r. 102 - Regulation respecting the conciliation and arbitration procedure for the accounts of dietitians",
+        "citation": "",
+        "enabling_act": "Professional Code",
+        "words": 1247,
+        "value": 42.5
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "P-12, r. 10 - Regulation respecting the conciliation and arbitration procedure for the accounts of members of the Ordre des podiatres du Québec",
+        "citation": "",
+        "enabling_act": "Podiatry Act; Professional Code",
+        "words": 1281,
+        "value": 42.15
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "PORTABLE TRAFFIC CONTROL SYSTEMS",
+        "citation": "O. Reg. 185/22",
+        "enabling_act": "Highway Traffic Act",
+        "words": 1519,
+        "value": 42.13
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "C-15, r. 13 - Regulation respecting the conciliation and arbitration procedure for the accounts of members of the Ordre des chimistes du Québec",
+        "citation": "",
+        "enabling_act": "Professional Chemists Act; Professional Code",
+        "words": 1302,
+        "value": 41.47
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "C-26, r. 190 - Regulation respecting the conciliation and arbitration procedure for the accounts of members of the Ordre professionnel des orthophonistes et audiologistes du Québec",
+        "citation": "",
+        "enabling_act": "Professional Code",
+        "words": 1308,
+        "value": 41.28
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "C-26, r. 233 - Regulation respecting the conciliation and arbitration procedure for the accounts of members of the Ordre professionnel des technologues en prothèses et appareils dentaires du Québec",
+        "citation": "",
+        "enabling_act": "Professional Code",
+        "words": 1312,
+        "value": 41.16
+      }
+    ],
+    "obligations_density": [
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "GENERAL",
+        "citation": "O. Reg. 61/16",
+        "enabling_act": "Horse Racing Licence Act, 2015",
+        "words": 640,
+        "value": 25
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Public Sector Compensation Transparency Dissolved Public Sector Bodies Regulation",
+        "citation": "Alta Reg 113/2017",
+        "enabling_act": "Public Sector Compensation Transparency Act",
+        "words": 673,
+        "value": 14.86
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Interprovincial Subpoena Regulation",
+        "citation": "Alta Reg 67/2003",
+        "enabling_act": "Interprovincial Subpoena Act",
+        "words": 645,
+        "value": 13.95
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "GENERAL",
+        "citation": "O. Reg. 267/18",
+        "enabling_act": "Anti-Racism Act, 2017",
+        "words": 1583,
+        "value": 13.9
+      },
+      {
+        "prov": "PEI",
+        "name": "Prince Edward Island",
+        "title": "Interjurisdictional Support Orders Act General Regulations",
+        "citation": "",
+        "enabling_act": "Interjurisdictional Support Orders Act",
+        "words": 1053,
+        "value": 13.3
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "North Atlantic Treaty Organisation Privileges and Immunities Order",
+        "citation": "SOR/2024-126",
+        "enabling_act": "PRIVILEGES AND IMMUNITIES (NORTH ATLANTIC TREATY ORGANISATION) ACT",
+        "words": 529,
+        "value": 13.23
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "ZONING ORDER - CITY OF VAUGHAN, REGION OF YORK",
+        "citation": "O. Reg. 643/20",
+        "enabling_act": "Planning Act",
+        "words": 833,
+        "value": 13.21
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "ZONING ORDER - CITY OF RICHMOND HILL, REGIONAL MUNICIPALITY OF YORK",
+        "citation": "O. Reg. 39/22",
+        "enabling_act": "Planning Act",
+        "words": 1309,
+        "value": 12.99
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "FORMS",
+        "citation": "O. Reg. 434/11",
+        "enabling_act": "Registry Act",
+        "words": 1556,
+        "value": 12.85
+      },
+      {
+        "prov": "BC",
+        "name": "British Columbia",
+        "title": "National Instrument 31-102 National Registration Database - 37/2003",
+        "citation": "",
+        "enabling_act": "Securities Act",
+        "words": 1365,
+        "value": 12.45
+      },
+      {
+        "prov": "BC",
+        "name": "British Columbia",
+        "title": "National Instrument 55-102 System for Electronic Disclosure by Insiders (SEDI) - 230/2001",
+        "citation": "",
+        "enabling_act": "Securities Act",
+        "words": 2162,
+        "value": 12.03
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "84-107 - General",
+        "citation": "",
+        "enabling_act": "Salvage Dealers Licensing Act",
+        "words": 1516,
+        "value": 11.87
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Adult Learning Regulations",
+        "citation": "132/2014",
+        "enabling_act": "Adult Learning Act",
+        "words": 510,
+        "value": 11.76
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Counting of Service by Former Members of the Senate or House of Commons Regulations",
+        "citation": "C.R.C., c. 1357",
+        "enabling_act": "PUBLIC SERVICE SUPERANNUATION ACT",
+        "words": 689,
+        "value": 11.61
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Companies Act Regulations",
+        "citation": "156/91",
+        "enabling_act": "Companies Act",
+        "words": 604,
+        "value": 11.59
+      },
+      {
+        "prov": "PEI",
+        "name": "Prince Edward Island",
+        "title": "Eligible Prior Employment Regulations",
+        "citation": "",
+        "enabling_act": "Public Sector Pension Plan Act",
+        "words": 527,
+        "value": 11.39
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Volunteer Fire-fighter and Ground Search and Rescue Workers Registration Fee Exemption Regulations",
+        "citation": "130/1999",
+        "enabling_act": "Motor Vehicle Act",
+        "words": 849,
+        "value": 10.6
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Irrigation Plebiscite Regulation",
+        "citation": "Alta Reg 79/2000",
+        "enabling_act": "Irrigation Districts Act",
+        "words": 1135,
+        "value": 10.57
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "84-204 - General",
+        "citation": "",
+        "enabling_act": "Forest Fires Act",
+        "words": 4266,
+        "value": 10.55
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Forest Sustainability Regulations",
+        "citation": "148/2001",
+        "enabling_act": "Forests Act",
+        "words": 3008,
+        "value": 10.31
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "I-13.3, r. 6.2 - Regulation respecting free instructional material and certain financial contributions that may be required",
+        "citation": "",
+        "enabling_act": "Education Act",
+        "words": 1167,
+        "value": 10.28
+      },
+      {
+        "prov": "BC",
+        "name": "British Columbia",
+        "title": "Insurance Company Vehicle Liability Insurance Regulation",
+        "citation": "",
+        "enabling_act": "Financial Institutions Act",
+        "words": 590,
+        "value": 10.17
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "REGISTRATION REQUIREMENTS",
+        "citation": "O. Reg. 508/22",
+        "enabling_act": "Regulated Health Professions Act, 1991",
+        "words": 591,
+        "value": 10.15
+      },
+      {
+        "prov": "NL",
+        "name": "Newfoundland & Labrador",
+        "title": "Interjurisdictional Support Orders Regulations",
+        "citation": "NLR 48/03",
+        "enabling_act": "Interjurisdictional Support Orders Act",
+        "words": 1103,
+        "value": 9.97
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "COLLECTION OF IDENTIFYING INFORMATION IN CERTAIN CIRCUMSTANCES - PROHIBITION AND DUTIES",
+        "citation": "O. Reg. 400/23",
+        "enabling_act": "Community Safety and Policing Act, 2019",
+        "words": 3453,
+        "value": 9.85
+      }
+    ],
+    "permissive_density": [
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "CONDUCT OF BUSINESS",
+        "citation": "O. Reg. 147/22",
+        "enabling_act": "Ontario Food Terminal Act",
+        "words": 626,
+        "value": 27.16
+      },
+      {
+        "prov": "MB",
+        "name": "Manitoba",
+        "title": "Ecological Reserves Regulation",
+        "citation": "M.R. 245/2014",
+        "enabling_act": "The Ecological Reserves Act",
+        "words": 573,
+        "value": 22.69
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Guardianship of Veterans’ Property Regulations",
+        "citation": "C.R.C., c. 1579",
+        "enabling_act": "DEPARTMENT OF VETERANS AFFAIRS ACT",
+        "words": 586,
+        "value": 22.18
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Scaling Regulations",
+        "citation": "411/2007",
+        "enabling_act": "Scalers Act",
+        "words": 588,
+        "value": 22.11
+      },
+      {
+        "prov": "NL",
+        "name": "Newfoundland & Labrador",
+        "title": "Palaeontological Resource Regulations",
+        "citation": "NLR 67/11",
+        "enabling_act": "Historic Resources Act",
+        "words": 682,
+        "value": 21.99
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Fine Option Order",
+        "citation": "Alta Reg 92/1999",
+        "enabling_act": "Corrections Act",
+        "words": 551,
+        "value": 21.78
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Rehabilitation and Social Development Approval Assistance Regulations",
+        "citation": "59/74",
+        "enabling_act": "Social Assistance Act",
+        "words": 646,
+        "value": 21.67
+      },
+      {
+        "prov": "NL",
+        "name": "Newfoundland & Labrador",
+        "title": "Wild Life Park Regulations",
+        "citation": "NLR 977/96",
+        "enabling_act": "Wild Life Act",
+        "words": 844,
+        "value": 21.33
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Revenue Act Appeal Rules",
+        "citation": "290/1992",
+        "enabling_act": "Energy and Regulatory Boards Act",
+        "words": 1184,
+        "value": 21.11
+      },
+      {
+        "prov": "BC",
+        "name": "British Columbia",
+        "title": "Nurses and Midwives Regulation",
+        "citation": "",
+        "enabling_act": "Health Professions and Occupations Act",
+        "words": 4583,
+        "value": 20.95
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Exceptions to Prohibitions on Non-essential Pesticides Regulations",
+        "citation": "184/2010",
+        "enabling_act": "Non-essential Pesticides Control Act",
+        "words": 958,
+        "value": 20.88
+      },
+      {
+        "prov": "PEI",
+        "name": "Prince Edward Island",
+        "title": "Driver Improvement Program Regulations",
+        "citation": "",
+        "enabling_act": "Highway Traffic Act",
+        "words": 527,
+        "value": 20.87
+      },
+      {
+        "prov": "BC",
+        "name": "British Columbia",
+        "title": "Health and Care Professionals Regulation",
+        "citation": "",
+        "enabling_act": "Health Professions and Occupations Act",
+        "words": 4170,
+        "value": 20.86
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "2014-18 - Rule-making Procedure",
+        "citation": "",
+        "enabling_act": "Financial and Consumer Services Commission Act",
+        "words": 2055,
+        "value": 20.44
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Consolidated Computer Inc. Regulations",
+        "citation": "SOR/81-693",
+        "enabling_act": "APPROPRIATION ACT NO. 1, 1980-81; APPROPRIATION ACT NO. 2, 1981-82; APPROPRIATION ACTS",
+        "words": 687,
+        "value": 20.38
+      },
+      {
+        "prov": "MB",
+        "name": "Manitoba",
+        "title": "Permits and Leases Regulation",
+        "citation": "M.R. 150/96",
+        "enabling_act": "The Provincial Parks Act",
+        "words": 691,
+        "value": 20.26
+      },
+      {
+        "prov": "NL",
+        "name": "Newfoundland & Labrador",
+        "title": "Wild Life Reserves Regulations - Middle Ridge Regulations",
+        "citation": "NLR 799/96",
+        "enabling_act": "Wild Life Act",
+        "words": 993,
+        "value": 20.14
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Alberta Enterprise Corporation Regulation",
+        "citation": "Alta Reg 202/2008",
+        "enabling_act": "Alberta Enterprise Corporation Act",
+        "words": 696,
+        "value": 20.11
+      },
+      {
+        "prov": "PEI",
+        "name": "Prince Edward Island",
+        "title": "Notaries and Commissioners Regulations",
+        "citation": "",
+        "enabling_act": "Notaries and Commissioners Act",
+        "words": 548,
+        "value": 20.07
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Intake And Caseflow Management Regulation",
+        "citation": "Alta Reg 150/2005",
+        "enabling_act": "",
+        "words": 1107,
+        "value": 19.87
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "83-71 - Disaster Assistance to Municipalities",
+        "citation": "",
+        "enabling_act": "Emergency Measures Act",
+        "words": 1169,
+        "value": 19.67
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "A-2.1, r. 6 - Rules of Proof and Procedure before the Commission d’accès à l’information",
+        "citation": "",
+        "enabling_act": "Act respecting Access to documents held by public bodies and the protection of personal information",
+        "words": 876,
+        "value": 19.41
+      },
+      {
+        "prov": "BC",
+        "name": "British Columbia",
+        "title": "Medical, Diagnostic and Therapeutic Professionals Regulation",
+        "citation": "",
+        "enabling_act": "Health Professions and Occupations Act",
+        "words": 1088,
+        "value": 19.3
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Supreme Court of Newfoundland, Trial Division Rules for Orders in the Nature of Certiorari, Habeas Corpus, Mandamus and Prohibition",
+        "citation": "SI/2000-33",
+        "enabling_act": "CRIMINAL CODE",
+        "words": 1250,
+        "value": 19.2
+      },
+      {
+        "prov": "NL",
+        "name": "Newfoundland & Labrador",
+        "title": "Fossil Ecological Reserve Regulations, 2009",
+        "citation": "NLR 13/09",
+        "enabling_act": "Wilderness and Ecological Reserves Act",
+        "words": 1212,
+        "value": 18.98
+      }
+    ],
+    "outdated_refs_density": [
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "M.L.A. Pension Adjustment Regulations",
+        "citation": "Alta Reg 305/1969",
+        "enabling_act": "Members of the Legislative Assembly Pension Plan Act",
+        "words": 4260,
+        "value": 103.99
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Judgment Interest Regulation",
+        "citation": "Alta Reg 215/2011",
+        "enabling_act": "Judgment Interest Act",
+        "words": 635,
+        "value": 80.31
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "86-32 - Fees for Veterinary Services",
+        "citation": "",
+        "enabling_act": "Financial Administration Act",
+        "words": 17538,
+        "value": 72.87
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Hospital Standards Regulations, 1980",
+        "citation": "H-10 - SR331/79",
+        "enabling_act": "Provincial Health Authority Act, P-30.3",
+        "words": 3504,
+        "value": 70.78
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "2012-67 - Fees",
+        "citation": "",
+        "enabling_act": "Apprenticeship and Occupational Certification Act",
+        "words": 561,
+        "value": 69.52
+      },
+      {
+        "prov": "MB",
+        "name": "Manitoba",
+        "title": "Producer Price and Milk Cost of Production Order",
+        "citation": "M.R. 77/94",
+        "enabling_act": "The Milk Prices Review Act",
+        "words": 684,
+        "value": 67.25
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "2001-11 - Registered Labour-sponsored Venture Capital Corporations",
+        "citation": "",
+        "enabling_act": "New Brunswick Income Tax Act",
+        "words": 699,
+        "value": 62.95
+      },
+      {
+        "prov": "YK",
+        "name": "Yukon",
+        "title": "O.I.C. 1993 no. 061",
+        "citation": "",
+        "enabling_act": "Assessment and Taxation Act",
+        "words": 749,
+        "value": 62.75
+      },
+      {
+        "prov": "MB",
+        "name": "Manitoba",
+        "title": "Designation of Employees and Persons Deemed to be in the Civil Service Regulation",
+        "citation": "M.R. 260/96",
+        "enabling_act": "The Civil Service Superannuation Act",
+        "words": 2311,
+        "value": 47.6
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Securities Regulations, S-42.2 Reg 1",
+        "citation": "S-42.2 Reg 1",
+        "enabling_act": "Securities Act, 1988, S-42.2",
+        "words": 3570,
+        "value": 45.94
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "84-229 - Board of Management General",
+        "citation": "",
+        "enabling_act": "Civil Service Act",
+        "words": 549,
+        "value": 45.54
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Order Varying Certain National Transportation Agency Orders Respecting Railway Companies",
+        "citation": "SOR/89-488",
+        "enabling_act": "CANADA TRANSPORTATION ACT",
+        "words": 1591,
+        "value": 43.37
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "2002-63 - Services and Communications",
+        "citation": "",
+        "enabling_act": "Official Languages Act",
+        "words": 629,
+        "value": 41.34
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "93-137 - General",
+        "citation": "",
+        "enabling_act": "Civil Service Act",
+        "words": 1018,
+        "value": 41.26
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "INABILITY TO OPERATE REGISTRATION SYSTEM",
+        "citation": "O. Reg. 356/03",
+        "enabling_act": "Personal Property Security Act",
+        "words": 534,
+        "value": 41.2
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Saskatchewan Medical Care Insurance Payment Regulations, 1994, S-29 Reg 19",
+        "citation": "S-29 Reg 19",
+        "enabling_act": "Saskatchewan Medical Care Insurance Act, S-29",
+        "words": 5368,
+        "value": 39.49
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Summary Offences Procedure Regulations, 1991, S-63.1 Reg 2",
+        "citation": "S-63.1 Reg 2",
+        "enabling_act": "Summary Offences Procedure Act, 1990, S-63.1",
+        "words": 6381,
+        "value": 38.71
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "DESIGNATED WATERFRONT AREA",
+        "citation": "O. Reg. 200/03",
+        "enabling_act": "Toronto Waterfront Revitalization Corporation Act, 2002",
+        "words": 1427,
+        "value": 38.54
+      },
+      {
+        "prov": "MB",
+        "name": "Manitoba",
+        "title": "Vehicle Use in Hunting Regulation",
+        "citation": "M.R. 212/94",
+        "enabling_act": "The Wildlife Act",
+        "words": 1365,
+        "value": 37.36
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Hunter Education, Safety, and Training Regulations",
+        "citation": "208/87",
+        "enabling_act": "Wildlife Act",
+        "words": 1819,
+        "value": 36.28
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Order Transferring to the Minister of Western Economic Diversification the Powers, Duties and Functions of the Minister of Indian Affairs and Northern Development Under Certain Acts in Relation to the Western Provinces",
+        "citation": "SI/88-112",
+        "enabling_act": "PUBLIC SERVICE REARRANGEMENT AND TRANSFER OF DUTIES ACT",
+        "words": 534,
+        "value": 35.58
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Ethanol Fuel (General) Regulations, E-11.1 Reg 1",
+        "citation": "E-11.1 Reg 1",
+        "enabling_act": "Ethanol Fuel Act, E-11.1",
+        "words": 986,
+        "value": 35.5
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Equipment Approval Regulations",
+        "citation": "45/73",
+        "enabling_act": "Motor Vehicle Act",
+        "words": 568,
+        "value": 35.21
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Order Varying Telecom Decision CRTC 94-19",
+        "citation": "SI/94-143",
+        "enabling_act": "TELECOMMUNICATIONS ACT",
+        "words": 542,
+        "value": 35.06
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Waiver Regulation",
+        "citation": "Alta Reg 298/2003",
+        "enabling_act": "Public Health Act",
+        "words": 661,
+        "value": 34.8
+      }
+    ],
+    "prescriptivity": [
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Marine Safety Management System Regulations",
+        "citation": "SOR/2024-133",
+        "enabling_act": "CANADA SHIPPING ACT, 2001",
+        "words": 4327,
+        "value": 76
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "PACKAGING AUDITS AND PACKAGING REDUCTION WORK PLANS",
+        "citation": "O. Reg. 104/94",
+        "enabling_act": "Environmental Protection Act",
+        "words": 2399,
+        "value": 62
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "s-2.1, r. 15 - Regulation respecting safety and health in foundry works",
+        "citation": "",
+        "enabling_act": "Act respecting occupational health and safety",
+        "words": 5270,
+        "value": 59.67
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "PORTABLE TRAFFIC CONTROL SYSTEMS",
+        "citation": "O. Reg. 185/22",
+        "enabling_act": "Highway Traffic Act",
+        "words": 1519,
+        "value": 58
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Cannabis Tracking System Order",
+        "citation": "SOR/2019-202",
+        "enabling_act": "CANNABIS ACT",
+        "words": 2421,
+        "value": 41
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "89-65 - Special Permit Fees",
+        "citation": "",
+        "enabling_act": "Motor Vehicle Act",
+        "words": 5418,
+        "value": 38.5
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "GENERAL",
+        "citation": "O. Reg. 422/17",
+        "enabling_act": "Ontario Immigration Act, 2015",
+        "words": 9744,
+        "value": 38
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "PLASCO DEMONSTRATION PROJECT",
+        "citation": "O. Reg. 254/06",
+        "enabling_act": "Environmental Protection Act",
+        "words": 2862,
+        "value": 37
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "WASTE AUDITS AND WASTE REDUCTION WORK PLANS",
+        "citation": "O. Reg. 102/94",
+        "enabling_act": "Environmental Protection Act",
+        "words": 4104,
+        "value": 37
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "GENERAL",
+        "citation": "O. Reg. 55/03",
+        "enabling_act": "Interjurisdictional Support Orders Act, 2002",
+        "words": 1667,
+        "value": 36
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "ZONING ORDER - CITY OF RICHMOND HILL, REGIONAL MUNICIPALITY OF YORK",
+        "citation": "O. Reg. 698/20",
+        "enabling_act": "Planning Act",
+        "words": 1572,
+        "value": 34
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Separate School Regions Establishment Order",
+        "citation": "Alta Reg 99/2019",
+        "enabling_act": "Education Act",
+        "words": 1869,
+        "value": 33
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "GENERAL",
+        "citation": "O. Reg. 354/16",
+        "enabling_act": "Invasive Species Act, 2015",
+        "words": 2767,
+        "value": 33
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Standards of Vehicle Equipment Regulations",
+        "citation": "51/85",
+        "enabling_act": "Motor Vehicle Act",
+        "words": 2305,
+        "value": 31
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Vessel Traffic Services Zones Regulations",
+        "citation": "SOR/2025-275",
+        "enabling_act": "CANADA SHIPPING ACT, 2001",
+        "words": 1437,
+        "value": 30
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "REGISTRATIONS UNDER PART II.2 OF THE ACT - SMALL SCALE BREWERIES",
+        "citation": "O. Reg. 102/23",
+        "enabling_act": "Environmental Protection Act",
+        "words": 2071,
+        "value": 30
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "P-29, r. 2 - Regulation respecting bottled water",
+        "citation": "",
+        "enabling_act": "Food Products Act",
+        "words": 1414,
+        "value": 28
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Commercial Vehicle Maintenance Standards",
+        "citation": "296/90",
+        "enabling_act": "Motor Vehicle Act",
+        "words": 5341,
+        "value": 27.25
+      },
+      {
+        "prov": "NU",
+        "name": "Nunavut",
+        "title": "Occupational Health and Safety Regulations, Official Consolidation of",
+        "citation": "",
+        "enabling_act": "Safety Act",
+        "words": 35631,
+        "value": 26.91
+      },
+      {
+        "prov": "BC",
+        "name": "British Columbia",
+        "title": "Direction No. 5 to the British Columbia Utilities Commission - 245/2013",
+        "citation": "",
+        "enabling_act": "Utilities Commission Act",
+        "words": 2911,
+        "value": 26
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "DESIGNATION OF MUNICIPAL MEMBERS OF BOARDS OF HEALTH",
+        "citation": "R.R.O. 1990, Reg. 559",
+        "enabling_act": "Health Protection and Promotion Act",
+        "words": 2535,
+        "value": 26
+      },
+      {
+        "prov": "YK",
+        "name": "Yukon",
+        "title": "Tariff of Remuneration Regulation",
+        "citation": "",
+        "enabling_act": "",
+        "words": 1661,
+        "value": 26
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "S-3.4, r. 2.1 - Fire Safety Policies of the Minister of Public Security",
+        "citation": "",
+        "enabling_act": "Fire Safety Act",
+        "words": 17694,
+        "value": 25.75
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "FORMS",
+        "citation": "O. Reg. 434/11",
+        "enabling_act": "Registry Act",
+        "words": 1556,
+        "value": 25
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "ZONING ORDER - CITY OF RICHMOND HILL, REGIONAL MUNICIPALITY OF YORK",
+        "citation": "O. Reg. 39/22",
+        "enabling_act": "Planning Act",
+        "words": 1309,
+        "value": 25
+      }
+    ],
+    "exceptions_idx": [
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Proclamation Certifying Who Are the High Contracting Parties to the Warsaw Convention",
+        "citation": "C.R.C., c. 398",
+        "enabling_act": "CARRIAGE BY AIR ACT",
+        "words": 511,
+        "value": 1.96
+      },
+      {
+        "prov": "PEI",
+        "name": "Prince Edward Island",
+        "title": "Instructional Personnel Regulations",
+        "citation": "",
+        "enabling_act": "",
+        "words": 2225,
+        "value": 1.8
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "ZONING AREAS - TOWNSHIP OF KING, REGIONAL MUNICIPALITY OF YORK",
+        "citation": "O. Reg. 73/98",
+        "enabling_act": "Planning Act",
+        "words": 585,
+        "value": 1.71
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Order Assigning to the Minister of the Environment, the Administration, Management and Control of Certain Public Lands",
+        "citation": "SI/92-107",
+        "enabling_act": "CANADA WILDLIFE ACT",
+        "words": 804,
+        "value": 1.62
+      },
+      {
+        "prov": "NL",
+        "name": "Newfoundland & Labrador",
+        "title": "Wild Life Reserves Regulations - Middle Ridge Regulations",
+        "citation": "NLR 799/96",
+        "enabling_act": "Wild Life Act",
+        "words": 993,
+        "value": 1.61
+      },
+      {
+        "prov": "MB",
+        "name": "Manitoba",
+        "title": "Directed Marketing Egg Quality Order",
+        "citation": "M.R. 207/89",
+        "enabling_act": "The Farm Products Marketing Act",
+        "words": 504,
+        "value": 1.59
+      },
+      {
+        "prov": "NU",
+        "name": "Nunavut",
+        "title": "Motor Vehicle Equipment Regulations, Consolidation of",
+        "citation": "",
+        "enabling_act": "Motor Vehicles Act",
+        "words": 7460,
+        "value": 1.58
+      },
+      {
+        "prov": "NT",
+        "name": "Northwest Territories",
+        "title": "Motor Vehicle Equipment Regulations",
+        "citation": "",
+        "enabling_act": "Motor Vehicles Act",
+        "words": 7638,
+        "value": 1.57
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "M-17.2, r. 1 - Terms and conditions of the signing of certain deeds, documents or writings concerning the application of the Act respecting the Ministère de la Famille, des Aînés et de la Condition féminine in respect of the status of women",
+        "citation": "",
+        "enabling_act": "Act respecting the Ministère de la Famille, des Aînés et de la Condition féminine",
+        "words": 1418,
+        "value": 1.55
+      },
+      {
+        "prov": "NL",
+        "name": "Newfoundland & Labrador",
+        "title": "Wild Life Reserves Regulations - Big Barasway, Burgeo Regulations",
+        "citation": "NLR 770/96",
+        "enabling_act": "Wild Life Act",
+        "words": 658,
+        "value": 1.52
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "2021-83 - Designated Easements Regulation",
+        "citation": "",
+        "enabling_act": "Community Planning Act",
+        "words": 1188,
+        "value": 1.52
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Hydro and Electric Energy Regulation",
+        "citation": "Alta Reg 32/2024",
+        "enabling_act": "Hydro and Electric Energy Act",
+        "words": 807,
+        "value": 1.49
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "DELEGATION OF AUTHORITY OF MINISTER TO GIVE CONSENTS",
+        "citation": "O. Reg. 136/95",
+        "enabling_act": "Planning Act",
+        "words": 680,
+        "value": 1.47
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Regulations Excluding Certain Vaping Products Regulated Under the Food and Drugs Act from the Application of the Tobacco and Vaping Products Act",
+        "citation": "SOR/2018-133",
+        "enabling_act": "TOBACCO AND VAPING PRODUCTS ACT",
+        "words": 688,
+        "value": 1.45
+      },
+      {
+        "prov": "YK",
+        "name": "Yukon",
+        "title": "Herschel Island Park Regulations",
+        "citation": "",
+        "enabling_act": "",
+        "words": 1172,
+        "value": 1.45
+      },
+      {
+        "prov": "BC",
+        "name": "British Columbia",
+        "title": "Community Planning Area Number 24: Gulf Islands Subdivision Regulation",
+        "citation": "",
+        "enabling_act": "Local Services Act",
+        "words": 552,
+        "value": 1.45
+      },
+      {
+        "prov": "MB",
+        "name": "Manitoba",
+        "title": "Hunting Dogs Regulation",
+        "citation": "M.R. 79/95",
+        "enabling_act": "The Wildlife Act",
+        "words": 776,
+        "value": 1.42
+      },
+      {
+        "prov": "MB",
+        "name": "Manitoba",
+        "title": "Excluded Services Regulation",
+        "citation": "M.R. 46/93",
+        "enabling_act": "The Health Services Insurance Act",
+        "words": 1497,
+        "value": 1.4
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Special Economic Measures (Democratic People’s Republic of Korea) Regulations",
+        "citation": "SOR/2011-167",
+        "enabling_act": "SPECIAL ECONOMIC MEASURES ACT",
+        "words": 857,
+        "value": 1.4
+      },
+      {
+        "prov": "BC",
+        "name": "British Columbia",
+        "title": "Enforcement Regulation",
+        "citation": "",
+        "enabling_act": "Food and Agricultural Products Classification Act",
+        "words": 572,
+        "value": 1.4
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "R-9, r. 4 - Regulation respecting the participation of Indians in the Québec Pension Plan",
+        "citation": "",
+        "enabling_act": "Act respecting the Québec Pension Plan",
+        "words": 508,
+        "value": 1.38
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "I-13.3, r. 2.02 - Regulation respecting the other conditions and procedures applicable to the scheme for the transfer of an immovable by a local municipality to a school service centre under section 272.2 of the Education Act",
+        "citation": "",
+        "enabling_act": "Education Act",
+        "words": 582,
+        "value": 1.37
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "84-230 - Exclusions",
+        "citation": "",
+        "enabling_act": "Civil Service Act",
+        "words": 1034,
+        "value": 1.35
+      },
+      {
+        "prov": "BC",
+        "name": "British Columbia",
+        "title": "Pooled Registered Pension Plans Regulation",
+        "citation": "",
+        "enabling_act": "Pooled Registered Pension Plans Act",
+        "words": 822,
+        "value": 1.34
+      },
+      {
+        "prov": "BC",
+        "name": "British Columbia",
+        "title": "Rule 71-801 Implementing the Multijurisdictional Disclosure System Under National Instrument 71-101 - 344/98",
+        "citation": "",
+        "enabling_act": "Securities Act",
+        "words": 689,
+        "value": 1.31
+      }
+    ],
+    "discretions_idx": [
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "93-104 - Fees",
+        "citation": "",
+        "enabling_act": "Vital Statistics Act",
+        "words": 2377,
+        "value": 2.02
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Debt Write-off Regulations, 1994",
+        "citation": "SOR/94-602",
+        "enabling_act": "FINANCIAL ADMINISTRATION ACT",
+        "words": 535,
+        "value": 1.68
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Health Labour Relations Reorganization (Commissioner) Regulations, H-0.03 Reg 1",
+        "citation": "H-0.03 Reg 1",
+        "enabling_act": "Saskatchewan Employment Act, S-15.1",
+        "words": 2715,
+        "value": 1.58
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "2001-26 - Fees in Relation to Highway Advertisements",
+        "citation": "",
+        "enabling_act": "Financial Administration Act",
+        "words": 732,
+        "value": 1.5
+      },
+      {
+        "prov": "NU",
+        "name": "Nunavut",
+        "title": "Interjurisdictional Support Orders Regulations",
+        "citation": "",
+        "enabling_act": "Interjurisdictional Support Orders Act",
+        "words": 683,
+        "value": 1.46
+      },
+      {
+        "prov": "PEI",
+        "name": "Prince Edward Island",
+        "title": "Workplace Harassment Regulations",
+        "citation": "",
+        "enabling_act": "Occupational Health and Safety Act",
+        "words": 1253,
+        "value": 1.44
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "PROFESSIONAL MISCONDUCT",
+        "citation": "O. Reg. 384/00",
+        "enabling_act": "Social Work and Social Service Work Act, 1998",
+        "words": 1129,
+        "value": 1.42
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "PROFESSIONAL MISCONDUCT",
+        "citation": "O. Reg. 317/12",
+        "enabling_act": "Psychotherapy Act, 2007",
+        "words": 1707,
+        "value": 1.41
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Community Treatment Order Regulation",
+        "citation": "Alta Reg 337/2009",
+        "enabling_act": "Mental Health Act",
+        "words": 928,
+        "value": 1.4
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "COUNCIL COMPOSITION OF CERTAIN LOWER-TIER MUNICIPALITIES - 2026-2030 TERM",
+        "citation": "O. Reg. 140/26",
+        "enabling_act": "Municipal Act, 2001",
+        "words": 500,
+        "value": 1.4
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "PROFESSIONAL MISCONDUCT",
+        "citation": "O. Reg. 318/12",
+        "enabling_act": "Traditional Chinese Medicine Act, 2006",
+        "words": 1532,
+        "value": 1.37
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Criminal Procedure Rules of the Supreme Court of the Northwest Territories",
+        "citation": "SI/98-78",
+        "enabling_act": "CRIMINAL CODE",
+        "words": 511,
+        "value": 1.37
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "2003-20 - Injury",
+        "citation": "",
+        "enabling_act": "Insurance Act",
+        "words": 915,
+        "value": 1.31
+      },
+      {
+        "prov": "MB",
+        "name": "Manitoba",
+        "title": "Appropriate Educational Programming Regulation",
+        "citation": "M.R. 155/2005",
+        "enabling_act": "The Public Schools Act",
+        "words": 2213,
+        "value": 1.31
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "SCOPES OF PRACTICE",
+        "citation": "O. Reg. 875/21",
+        "enabling_act": "Building Opportunities in the Skilled Trades Act, 2021",
+        "words": 11615,
+        "value": 1.31
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Shipping Casualties Reporting Regulations",
+        "citation": "SOR/85-514",
+        "enabling_act": "CANADA SHIPPING ACT, 2001",
+        "words": 545,
+        "value": 1.28
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "2011-70 - Hunting and Fishing Guides Licence",
+        "citation": "",
+        "enabling_act": "Fish and Wildlife Act",
+        "words": 546,
+        "value": 1.28
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Disclosure Of Information Regulation",
+        "citation": "Alta Reg 273/2004",
+        "enabling_act": "",
+        "words": 797,
+        "value": 1.25
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "PROFESSIONAL MISCONDUCT",
+        "citation": "O. Reg. 95/07",
+        "enabling_act": "Occupational Therapy Act, 1991",
+        "words": 1359,
+        "value": 1.25
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Ancillary Activities (Insurance Companies, Canadian Societies and Insurance Holding Companies) Regulations",
+        "citation": "SOR/2001-366",
+        "enabling_act": "INSURANCE COMPANIES ACT",
+        "words": 562,
+        "value": 1.25
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "2022-69 - Tax Withholding and Deductions",
+        "citation": "",
+        "enabling_act": "New Brunswick Income Tax Act",
+        "words": 2591,
+        "value": 1.24
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "PROFESSIONAL MISCONDUCT",
+        "citation": "O. Reg. 388/09",
+        "enabling_act": "Midwifery Act, 1991",
+        "words": 1305,
+        "value": 1.23
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Rules of the Provincial Court of Newfoundland and Labrador in Criminal Proceedings",
+        "citation": "SI/2004-134",
+        "enabling_act": "CRIMINAL CODE",
+        "words": 659,
+        "value": 1.21
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "In-person Learning Regulation",
+        "citation": "Alta Reg 13/2025",
+        "enabling_act": "Education Act",
+        "words": 1172,
+        "value": 1.19
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "PROFESSIONAL MISCONDUCT",
+        "citation": "O. Reg. 316/12",
+        "enabling_act": "Kinesiology Act, 2007",
+        "words": 1523,
+        "value": 1.18
+      }
+    ],
+    "legal_jargon_idx": [
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Labour Standards Code Reciprocal Enforcement Regulations",
+        "citation": "154/95",
+        "enabling_act": "the Act",
+        "words": 775,
+        "value": 5.81
+      },
+      {
+        "prov": "MB",
+        "name": "Manitoba",
+        "title": "Veterinary Services Districts Establishment (2023) Regulation",
+        "citation": "M.R. 76/2023",
+        "enabling_act": "The Veterinary Services Act",
+        "words": 807,
+        "value": 3.22
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Gaming Licensing Exemption and Remission Regulations, F-13.4 Reg 8",
+        "citation": "F-13.4 Reg 8",
+        "enabling_act": "Financial Administration Act, 1993, F-13.4",
+        "words": 512,
+        "value": 3.12
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Insurance Premiums Tax (Mutual Insurance Companies – Farm Property) Exemption and Remission Regulations, F-13.4 Reg 28",
+        "citation": "F-13.4 Reg 28",
+        "enabling_act": "Financial Administration Act, 1993, F-13.4",
+        "words": 518,
+        "value": 2.51
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Missing Persons and Presumption of Death Regulations, M-20.01 Reg 1",
+        "citation": "M-20.01 Reg 1",
+        "enabling_act": "Missing Persons and Presumption of Death Act, M-20.01",
+        "words": 929,
+        "value": 2.48
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Insurance Premiums Tax (Mutual Insurance Companies – Non-farm Property) Exemption and Remission Regulations, F-13.4 Reg 38",
+        "citation": "F-13.4 Reg 38",
+        "enabling_act": "Financial Administration Act, 1993, F-13.4",
+        "words": 534,
+        "value": 2.43
+      },
+      {
+        "prov": "PEI",
+        "name": "Prince Edward Island",
+        "title": "Reserved Activities Regulations",
+        "citation": "",
+        "enabling_act": "Regulated Health Professions Act",
+        "words": 651,
+        "value": 2.3
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Summary Offences Procedure Regulations, 1991, S-63.1 Reg 2",
+        "citation": "S-63.1 Reg 2",
+        "enabling_act": "Summary Offences Procedure Act, 1990, S-63.1",
+        "words": 6381,
+        "value": 2.3
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Statistics Canada Census and Survey Related Term Employment Exclusion Approval Order",
+        "citation": "SI/2010-81",
+        "enabling_act": "PUBLIC SERVICE EMPLOYMENT ACT",
+        "words": 568,
+        "value": 2.29
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Members' Conflict of Interest Regulations, 2022, M-11.11 Reg 2",
+        "citation": "M-11.11 Reg 2",
+        "enabling_act": "Members’ Conflict of Interest Act, M-11.11",
+        "words": 667,
+        "value": 2.1
+      },
+      {
+        "prov": "PEI",
+        "name": "Prince Edward Island",
+        "title": "Registered Professional Planners Act General Regulations",
+        "citation": "",
+        "enabling_act": "Registered Professional Planners Act",
+        "words": 1011,
+        "value": 2.08
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Land Surveys Conversion Facilitation Regulations, L-4.1 Reg 2",
+        "citation": "L-4.1 Reg 2",
+        "enabling_act": "Land Surveys Act, 2000, L-4.1",
+        "words": 1083,
+        "value": 2.03
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Community Therapy Regulations, D-17 Reg 7",
+        "citation": "D-17 Reg 7",
+        "enabling_act": "Health Administration Act, H-0.0001",
+        "words": 646,
+        "value": 2.01
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Optometric Services Payment Negotiation Regulations, 1988, S-29 Reg 16",
+        "citation": "S-29 Reg 16",
+        "enabling_act": "Saskatchewan Medical Care Insurance Act, S-29",
+        "words": 1060,
+        "value": 1.98
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Meetings and Proposals (Trust and Loan Companies) Regulations",
+        "citation": "SOR/2006-317",
+        "enabling_act": "TRUST AND LOAN COMPANIES ACT",
+        "words": 561,
+        "value": 1.96
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Statistics Canada Census and Survey Related Term Employment Exclusion Approval Order",
+        "citation": "SI/2017-75",
+        "enabling_act": "PUBLIC SERVICE EMPLOYMENT ACT",
+        "words": 573,
+        "value": 1.92
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Rice Harvesting Boat (Provincial Sales Tax) Remission Regulations, F-13.4 Reg 45",
+        "citation": "F-13.4 Reg 45",
+        "enabling_act": "Financial Administration Act, 1993, F-13.4",
+        "words": 524,
+        "value": 1.91
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Strong Recovery Adaptation Rebate Regulations, E-13.1 Reg 26",
+        "citation": "E-13.1 Reg 26",
+        "enabling_act": "Executive Government Administration Act, E-13.1",
+        "words": 1794,
+        "value": 1.9
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Local Authority Freedom of Information and Protection of Privacy Regulations, L-27.1 Reg 1",
+        "citation": "L-27.1 Reg 1",
+        "enabling_act": "Local Authority Freedom of Information and Protection of Privacy Act, L-27.1",
+        "words": 3426,
+        "value": 1.81
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "School Division Tax Loss Compensation Fund Administration Regulations, E-0.1 Reg 18",
+        "citation": "E-0.1 Reg 18",
+        "enabling_act": "Education Act, 1995, E-0.2",
+        "words": 1136,
+        "value": 1.76
+      },
+      {
+        "prov": "PEI",
+        "name": "Prince Edward Island",
+        "title": "Coroners Act Regulations",
+        "citation": "",
+        "enabling_act": "Coroners Act",
+        "words": 684,
+        "value": 1.75
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Short-term Hog Loan Regulations, 2008, F-8.001 Reg 34",
+        "citation": "F-8.001 Reg 34",
+        "enabling_act": "Farm Financial Stability Act, F-8.001",
+        "words": 2567,
+        "value": 1.75
+      },
+      {
+        "prov": "SK",
+        "name": "Saskatchewan",
+        "title": "Vehicle Impoundment (General) Regulations, 2014, T-18.1 Reg 17",
+        "citation": "T-18.1 Reg 17",
+        "enabling_act": "Traffic Safety Act, T-18.1",
+        "words": 4133,
+        "value": 1.72
+      },
+      {
+        "prov": "PEI",
+        "name": "Prince Edward Island",
+        "title": "Employment Standards Reciprocity Order",
+        "citation": "",
+        "enabling_act": "Employment Standards Act",
+        "words": 702,
+        "value": 1.71
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Commercial Loan (Insurance Companies, Societies, Insurance Holding Companies and Foreign Companies) Regulations",
+        "citation": "SOR/2001-368",
+        "enabling_act": "INSURANCE COMPANIES ACT",
+        "words": 587,
+        "value": 1.7
+      }
+    ],
+    "cross_ref_idx": [
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "98-41 - Administrative Penalties",
+        "citation": "",
+        "enabling_act": "Clean Air Act",
+        "words": 557,
+        "value": 13.46
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "ELIGIBILITY TO HOLD A LICENCE - CLEAN CRIMINAL RECORD",
+        "citation": "O. Reg. 37/08",
+        "enabling_act": "Private Security and Investigative Services Act, 2005",
+        "words": 720,
+        "value": 12.64
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "ADMINISTRATION AND ENFORCEMENT OF REGULATIONS IN RESPECT OF THE RAW MILK AND CREAM QUALITY PROGRAM",
+        "citation": "O. Reg. 121/98",
+        "enabling_act": "Milk Act",
+        "words": 549,
+        "value": 12.2
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "2022-47 - General",
+        "citation": "",
+        "enabling_act": "The Pooled Registered Pension Plans Act",
+        "words": 30496,
+        "value": 11.35
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "GENERAL",
+        "citation": "O. Reg. 235/03",
+        "enabling_act": "Prohibiting Profiting from Recounting Crimes Act, 2002",
+        "words": 1891,
+        "value": 11
+      },
+      {
+        "prov": "NL",
+        "name": "Newfoundland & Labrador",
+        "title": "Management of Greenhouse Gas Administrative Penalty Regulations",
+        "citation": "NLR 72/17",
+        "enabling_act": "Management of Greenhouse Gas Act",
+        "words": 517,
+        "value": 10.25
+      },
+      {
+        "prov": "YK",
+        "name": "Yukon",
+        "title": "Order",
+        "citation": "",
+        "enabling_act": "",
+        "words": 629,
+        "value": 10.02
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "91-57 - Forms",
+        "citation": "",
+        "enabling_act": "Provincial Offences Procedure Act",
+        "words": 949,
+        "value": 9.8
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "SPECIFIED OFFENCES - EXCEPTIONAL DISCLOSURE OF NON-CONVICTION INFORMATION",
+        "citation": "O. Reg. 350/18",
+        "enabling_act": "Police Record Checks Reform Act, 2015",
+        "words": 1571,
+        "value": 9.61
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "TAX MATTERS - VACANT AND EXCESS LAND SUBCLASSES, TAX REDUCTIONS",
+        "citation": "O. Reg. 580/17",
+        "enabling_act": "Municipal Act, 2001",
+        "words": 4463,
+        "value": 9.52
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Standards for Work-Integrated Learning Activities Regulations",
+        "citation": "SOR/2020-145",
+        "enabling_act": "CANADA LABOUR CODE",
+        "words": 1159,
+        "value": 9.49
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "ADMINISTRATIVE PENALTIES",
+        "citation": "O. Reg. 209/09",
+        "enabling_act": "Payday Loans Act, 2008",
+        "words": 945,
+        "value": 9.42
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Non-Permit Areas Regulation",
+        "citation": "Alta Reg 53/2000",
+        "enabling_act": "Forest and Prairie Protection Act",
+        "words": 4260,
+        "value": 9.15
+      },
+      {
+        "prov": "NU",
+        "name": "Nunavut",
+        "title": "Liquor Plebiscites and Elections Regulations",
+        "citation": "",
+        "enabling_act": "Liquor Act",
+        "words": 778,
+        "value": 9
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Exemptions from and Modifications to Hours of Work Provisions Regulations",
+        "citation": "SOR/2021-200",
+        "enabling_act": "CANADA LABOUR CODE",
+        "words": 1651,
+        "value": 8.6
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "2022-69 - Tax Withholding and Deductions",
+        "citation": "",
+        "enabling_act": "New Brunswick Income Tax Act",
+        "words": 2591,
+        "value": 8.57
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "ACCIDENT AND SICKNESS INSURANCE - APPLICATION OF PART VII OF THE ACT",
+        "citation": "O. Reg. 279/15",
+        "enabling_act": "Insurance Act",
+        "words": 865,
+        "value": 8.55
+      },
+      {
+        "prov": "NU",
+        "name": "Nunavut",
+        "title": "Interim Regulations (2022 to 2024)",
+        "citation": "",
+        "enabling_act": "Education Act",
+        "words": 551,
+        "value": 8.53
+      },
+      {
+        "prov": "MB",
+        "name": "Manitoba",
+        "title": "Conservation Officers Regulation",
+        "citation": "M.R. 155/2015",
+        "enabling_act": "The Conservation Officers Act",
+        "words": 2072,
+        "value": 8.45
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "DEFINITIONS OF COMMERCIAL MOTOR VEHICLE AND TOW TRUCK",
+        "citation": "O. Reg. 419/15",
+        "enabling_act": "Highway Traffic Act",
+        "words": 756,
+        "value": 8.33
+      },
+      {
+        "prov": "NU",
+        "name": "Nunavut",
+        "title": "Interim Regulations (2024-2026)",
+        "citation": "",
+        "enabling_act": "Education Act",
+        "words": 564,
+        "value": 8.16
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "TRANSITIONAL MATTERS",
+        "citation": "O. Reg. 101/18",
+        "enabling_act": "Local Planning Appeal Tribunal Act, 2017",
+        "words": 771,
+        "value": 7.91
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "TRANSITIONAL MATTERS",
+        "citation": "O. Reg. 157/18",
+        "enabling_act": "Child, Youth and Family Services Act, 2017",
+        "words": 6792,
+        "value": 7.73
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "COMPOSITION OF FIRST BOARD AND TRANSITION",
+        "citation": "O. Reg. 217/18",
+        "enabling_act": "Université de l'Ontario français Act, 2017",
+        "words": 905,
+        "value": 7.62
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "CALCULATION OF FEES FOR PUPILS FOR THE 2016-2017 SCHOOL BOARD FISCAL YEAR",
+        "citation": "O. Reg. 216/16",
+        "enabling_act": "Education Act",
+        "words": 7995,
+        "value": 7.59
+      }
+    ],
+    "outdated_words_idx": [
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Postage Meter Regulations, 2010",
+        "citation": "SOR/2010-220",
+        "enabling_act": "CANADA POST CORPORATION ACT",
+        "words": 704,
+        "value": 7.24
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "ADMINISTRATIVE PENALTIES",
+        "citation": "O. Reg. 273/07",
+        "enabling_act": "Highway Traffic Act",
+        "words": 970,
+        "value": 6.08
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Pensioners Training Regulations",
+        "citation": "C.R.C., c. 1581",
+        "enabling_act": "DEPARTMENT OF VETERANS AFFAIRS ACT",
+        "words": 1524,
+        "value": 6.04
+      },
+      {
+        "prov": "NB",
+        "name": "New Brunswick",
+        "title": "82-210 - Pension Fund",
+        "citation": "",
+        "enabling_act": "Workersâ€™ Compensation Act",
+        "words": 1116,
+        "value": 5.73
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Gift Card Regulations",
+        "citation": "325/2009",
+        "enabling_act": "Consumer Protection Act",
+        "words": 571,
+        "value": 5.6
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "T-11.001, r. 1 - Regulation respecting the reimbursement of councillors’ research and support expenses",
+        "citation": "",
+        "enabling_act": "Act respecting the remuneration of elected municipal officers",
+        "words": 506,
+        "value": 5.53
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "M.L.A. Pension Adjustment Regulations",
+        "citation": "Alta Reg 305/1969",
+        "enabling_act": "Members of the Legislative Assembly Pension Plan Act",
+        "words": 4260,
+        "value": 5.52
+      },
+      {
+        "prov": "NL",
+        "name": "Newfoundland & Labrador",
+        "title": "Gift Card Regulations",
+        "citation": "NLR 14/11",
+        "enabling_act": "Consumer Protection and Business Practices Act",
+        "words": 611,
+        "value": 5.4
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Gift Card Regulation",
+        "citation": "Alta Reg 146/2008",
+        "enabling_act": "Consumer Protection Act",
+        "words": 709,
+        "value": 4.94
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "S-13.1, r. 1.1 - By-law respecting electronic bingo",
+        "citation": "",
+        "enabling_act": "Act respecting the Société des loteries du Québec",
+        "words": 964,
+        "value": 4.77
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "REGISTRATIONS UNDER PART II.2 OF THE ACT - PRINTING",
+        "citation": "O. Reg. 349/12",
+        "enabling_act": "Environmental Protection Act",
+        "words": 8712,
+        "value": 4.74
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Canadian Arsenals Pension Regulations",
+        "citation": "SOR/61-507",
+        "enabling_act": "PUBLIC SERVICE SUPERANNUATION ACT",
+        "words": 639,
+        "value": 4.69
+      },
+      {
+        "prov": "YK",
+        "name": "Yukon",
+        "title": "Bond Regulations",
+        "citation": "",
+        "enabling_act": "",
+        "words": 541,
+        "value": 4.62
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Bingo Suppliers Regulations",
+        "citation": "38/1995",
+        "enabling_act": "Gaming Control Act",
+        "words": 1266,
+        "value": 4.58
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Specific Claims Tribunal Rules of Practice and Procedure",
+        "citation": "SOR/2011-119",
+        "enabling_act": "SPECIFIC CLAIMS TRIBUNAL ACT",
+        "words": 974,
+        "value": 4.52
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "NewPage Port Hawkesbury Pension Plans Regulations",
+        "citation": "134/2012",
+        "enabling_act": "NewPage Port Hawkesbury Pension Plans Act",
+        "words": 2112,
+        "value": 4.31
+      },
+      {
+        "prov": "MB",
+        "name": "Manitoba",
+        "title": "Administrative Penalty Regulation",
+        "citation": "M.R. 89/2014",
+        "enabling_act": "The Workplace Safety and Health Act",
+        "words": 650,
+        "value": 4.31
+      },
+      {
+        "prov": "QC",
+        "name": "Quebec",
+        "title": "O-6, r. 13 - Regulation respecting the keeping of records and offices of dispensing opticians",
+        "citation": "",
+        "enabling_act": "Dispensing Opticians Act; Professional Code",
+        "words": 635,
+        "value": 4.25
+      },
+      {
+        "prov": "PEI",
+        "name": "Prince Edward Island",
+        "title": "Teachers' Pension Plan Act General Regulations",
+        "citation": "",
+        "enabling_act": "Teachers’ Pension Plan Act",
+        "words": 1749,
+        "value": 4.23
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "GENERAL",
+        "citation": "O. Reg. 176/09",
+        "enabling_act": "Photo Card Act, 2008",
+        "words": 786,
+        "value": 4.2
+      },
+      {
+        "prov": "ON",
+        "name": "Ontario",
+        "title": "PENSION MATTERS, CERTAIN FORMER EMPLOYEES",
+        "citation": "O. Reg. 160/08",
+        "enabling_act": "Ministry of Revenue Act",
+        "words": 911,
+        "value": 4.17
+      },
+      {
+        "prov": "AB",
+        "name": "Alberta",
+        "title": "Identification Card Regulation",
+        "citation": "Alta Reg 221/2003",
+        "enabling_act": "Government Organization Act",
+        "words": 3280,
+        "value": 4.12
+      },
+      {
+        "prov": "BC",
+        "name": "British Columbia",
+        "title": "Identification Card Regulation - 4/2013",
+        "citation": "",
+        "enabling_act": "Motor Vehicle Act",
+        "words": 2102,
+        "value": 4.09
+      },
+      {
+        "prov": "PEI",
+        "name": "Prince Edward Island",
+        "title": "Division of Benefits and Separate Pension Regulations",
+        "citation": "",
+        "enabling_act": "Public Sector Pension Plan Act",
+        "words": 2214,
+        "value": 4.07
+      },
+      {
+        "prov": "CA",
+        "name": "Federal (Canada)",
+        "title": "Cheque Issue Regulations, 1997",
+        "citation": "SOR/97-240",
+        "enabling_act": "FINANCIAL ADMINISTRATION ACT",
+        "words": 1486,
+        "value": 4.04
+      }
+    ],
+    "age_years": [
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Designated Agents and Authorized Persons Regulations",
+        "citation": "101/2019",
+        "enabling_act": "Vital Statistics Act",
+        "words": 520,
+        "value": 2017.2
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Rules for the Regulation of Practice and Procedure",
+        "citation": "48/1942",
+        "enabling_act": "Public Utilities Act",
+        "words": 4115,
+        "value": 113.4
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "By-laws of the Association of Professional Engineers",
+        "citation": "8/1946",
+        "enabling_act": "Engineering Profession Act",
+        "words": 6377,
+        "value": 80.4
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Nova Scotia Registered Barbers Association By-laws",
+        "citation": "32/19571",
+        "enabling_act": "Registered Barbers Act",
+        "words": 3191,
+        "value": 69.1
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Hospital Insurance Regulations",
+        "citation": "11/1958",
+        "enabling_act": "Health Services and Insurance Act",
+        "words": 4672,
+        "value": 68
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Municipal Hospitals Loan Regulations",
+        "citation": "29/1962",
+        "enabling_act": "Municipal Hospitals Loan Act",
+        "words": 854,
+        "value": 64.6
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "M.S.I. Regulations",
+        "citation": "41/1969",
+        "enabling_act": "Health Services and Insurance Act",
+        "words": 1213,
+        "value": 57.5
+      },
+      {
+        "prov": "YK",
+        "name": "Yukon",
+        "title": "Agreement (South Klondike Highway)",
+        "citation": "",
+        "enabling_act": "",
+        "words": 1013,
+        "value": 56.8
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Condominium Regulations",
+        "citation": "60/1971",
+        "enabling_act": "Condominium Act",
+        "words": 10229,
+        "value": 54.9
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Trade Union Procedures Regulations",
+        "citation": "101/1972",
+        "enabling_act": "Labour Board Act",
+        "words": 6117,
+        "value": 54
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Non-Resident Registration Regulations",
+        "citation": "72/1974",
+        "enabling_act": "Motor Vehicle Act",
+        "words": 795,
+        "value": 52.2
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Atlantic Provinces Special Education Authority Regulations",
+        "citation": "103/1975",
+        "enabling_act": "Atlantic Provinces Special Education Authority Act",
+        "words": 2569,
+        "value": 51.2
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Bayswater Beach Provincial Park",
+        "citation": "159/1976",
+        "enabling_act": "Provincial Parks Act",
+        "words": 165,
+        "value": 50.3
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Jerry Lawrence Provincial Park",
+        "citation": "160/1976",
+        "enabling_act": "Provincial Parks Act",
+        "words": 165,
+        "value": 50.3
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Designation",
+        "citation": "104/1976",
+        "enabling_act": "Wildlife Act",
+        "words": 170,
+        "value": 49.9
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Regulations",
+        "citation": "104/1976",
+        "enabling_act": "Wildlife Act",
+        "words": 568,
+        "value": 49.9
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Trade Designations",
+        "citation": "51/2005",
+        "enabling_act": "Apprenticeship and Trades Qualifications Act",
+        "words": 158,
+        "value": 49.9
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Exemption from Registration of Certain Vehicles of the Department of Transportation and Infrastructure Renewal Regulations",
+        "citation": "82/1976",
+        "enabling_act": "Motor Vehicle Act",
+        "words": 175,
+        "value": 49.5
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Legal Aid General Regulations and Tariff of Fees",
+        "citation": "77/1977",
+        "enabling_act": "Legal Aid Act",
+        "words": 915,
+        "value": 49.2
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Homes for Special Care Regulations",
+        "citation": "127/1977",
+        "enabling_act": "Homes for Special Care Act",
+        "words": 8790,
+        "value": 49.1
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Surplus Crown Property Disposal Regulations",
+        "citation": "9/1978",
+        "enabling_act": "Surplus Crown Property Disposal Act",
+        "words": 600,
+        "value": 48.7
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Dollar Lake Provincial Park",
+        "citation": "24/1981",
+        "enabling_act": "Provincial Parks Act",
+        "words": 165,
+        "value": 45.6
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Municipal Assistance Regulations",
+        "citation": "76/1981",
+        "enabling_act": "Social Assistance Act",
+        "words": 3809,
+        "value": 45.4
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Crystal Crescent Provincial Park",
+        "citation": "150/1981",
+        "enabling_act": "Provincial Parks Act",
+        "words": 165,
+        "value": 44.9
+      },
+      {
+        "prov": "NS",
+        "name": "Nova Scotia",
+        "title": "Homemakers' Services Regulations",
+        "citation": "23/1982",
+        "enabling_act": "Homemakers’ Services Act",
+        "words": 1046,
+        "value": 44.7
+      }
+    ]
+  }
+}

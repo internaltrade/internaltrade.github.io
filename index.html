@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mapping Interprovincial Trade Barriers in Canada</title>
+<meta name="description" content="Where Canada's provincial, territorial and federal regulations diverge and act as barriers to internal trade — an evidence base built from the full text of every regulation in the country. Faculty of Law, University of Ottawa.">
+<link rel="canonical" href="https://intertra.github.io/Internal-Trade-Canada/">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Wolfgang Alschner, Faculty of Law, University of Ottawa">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Interprovincial Trade Project">
+<meta property="og:title" content="Mapping Interprovincial Trade Barriers in Canada">
+<meta property="og:description" content="An evidence base from the full text of every provincial, territorial and federal regulation — where Canadian rules diverge and act as barriers to internal trade.">
+<meta property="og:url" content="https://intertra.github.io/Internal-Trade-Canada/">
+<meta property="og:locale" content="en_CA">
+<meta property="og:image" content="https://intertra.github.io/Internal-Trade-Canada/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mapping Interprovincial Trade Barriers in Canada — Faculty of Law, University of Ottawa">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://intertra.github.io/Internal-Trade-Canada/og-image.png">
+<meta name="twitter:title" content="Mapping Interprovincial Trade Barriers in Canada">
+<meta name="twitter:description" content="Where Canada's provincial, territorial and federal rules diverge and act as barriers to internal trade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+:root{
+  --ground:#F5F7FA; --surface:#FFFFFF; --surface-2:#EDF1F6; --surface-3:#E3E9F1;
+  --ink:#141820; --ink-2:#4B5462; --ink-3:#6F7887;
+  --rule:#D7DDE6; --rule-2:#E7ECF2;
+  --accent:#1D4E77; --accent-2:#2E6B9E; --accent-soft:#E3ECF4;
+  --nav:#1D4E77; --nav-soft:#E3ECF4;         /* Standards branch */
+  --net:#0F6F78; --net-soft:#E2EEF0;         /* Metrics branch */
+  --warn:#8A5A12; --warn-soft:#FBF2E2;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#11151B; --surface:#171C24; --surface-2:#1E252F; --surface-3:#252E3A;
+  --ink:#E6EBF2; --ink-2:#A6B1C0; --ink-3:#7E8896;
+  --rule:#2A3340; --rule-2:#222A35;
+  --accent:#7FB3DC; --accent-2:#9CC6E6; --accent-soft:#1B2A38;
+  --nav:#7FB3DC; --nav-soft:#1B2A38;
+  --net:#4FC4BD; --net-soft:#132A2B;
+  --warn:#D9A95E; --warn-soft:#2A2214;
+}}
+:root[data-theme="dark"]{
+  --ground:#11151B; --surface:#171C24; --surface-2:#1E252F; --surface-3:#252E3A;
+  --ink:#E6EBF2; --ink-2:#A6B1C0; --ink-3:#7E8896;
+  --rule:#2A3340; --rule-2:#222A35;
+  --accent:#7FB3DC; --accent-2:#9CC6E6; --accent-soft:#1B2A38;
+  --nav:#7FB3DC; --nav-soft:#1B2A38;
+  --net:#4FC4BD; --net-soft:#132A2B;
+  --warn:#D9A95E; --warn-soft:#2A2214;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:15px;
+  line-height:1.55;-webkit-font-smoothing:antialiased;margin:0}
+.wrap{max-width:1000px;margin:0 auto;padding-inline:20px;padding-block:0 80px}
+a{color:var(--accent)}
+
+/* masthead */
+.mast{padding-block:46px 26px;border-bottom:2px solid var(--ink)}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 14px}
+h1{font-size:clamp(30px,5.4vw,48px);line-height:1.06;margin:0 0 16px;font-weight:600;
+  letter-spacing:-.022em;text-wrap:balance}
+.standfirst{font-family:var(--serif);font-size:18px;line-height:1.52;color:var(--ink-2);
+  max-width:64ch;margin:0 0 18px}
+.provenance{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);
+  display:flex;flex-wrap:wrap;gap:6px 18px}
+.provenance b{color:var(--ink-2);font-weight:500}
+
+/* generic section */
+section{padding-top:8px}
+h2{font-size:24px;font-weight:600;letter-spacing:-.014em;margin:48px 0 8px;text-wrap:balance}
+h2 .lead-in{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:10px}
+p{margin:0 0 14px;max-width:70ch}
+.lede{font-family:var(--serif);font-size:16.5px;color:var(--ink-2);max-width:66ch}
+
+/* three reasons */
+.reasons{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);margin:22px 0 8px}
+.reason{background:var(--surface);padding:20px 20px;display:grid;grid-template-columns:44px 1fr;gap:16px}
+.reason .idx{font-family:var(--mono);font-size:13px;color:var(--accent);font-weight:500;padding-top:3px}
+.reason h3{font-size:17px;font-weight:600;margin:0 0 7px;letter-spacing:-.01em}
+.reason p{font-size:14.5px;color:var(--ink-2);margin:0;max-width:62ch}
+@media (max-width:540px){.reason{grid-template-columns:1fr;gap:6px}}
+
+/* branch cards */
+.branches{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 8px}
+@media (max-width:720px){.branches{grid-template-columns:1fr}}
+.branch{background:var(--surface);border:1px solid var(--rule);border-top:3px solid var(--bc);
+  border-radius:2px;padding:22px 20px 20px;display:flex;flex-direction:column}
+.branch.standards{--bc:var(--nav)}
+.branch.metrics{--bc:var(--net)}
+.branch .kicker{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--bc);font-weight:500;margin-bottom:9px}
+.branch h3{font-size:21px;font-weight:600;letter-spacing:-.015em;margin:0 0 8px;line-height:1.15}
+.branch .desc{font-family:var(--serif);font-size:14.5px;color:var(--ink-2);line-height:1.5;margin:0 0 16px}
+.branch .figs{display:flex;flex-wrap:wrap;gap:16px 22px;margin:0 0 18px;padding-top:14px;
+  border-top:1px solid var(--rule-2)}
+.branch .fig .n{font-family:var(--mono);font-size:22px;font-weight:500;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums;display:block;line-height:1;color:var(--ink)}
+.branch .fig .k{font-size:11px;color:var(--ink-3);margin-top:5px;display:block;line-height:1.3;max-width:19ch}
+.branch .go{margin-top:auto;align-self:flex-start;font-family:var(--sans);font-size:14px;font-weight:600;
+  text-decoration:none;color:#fff;background:var(--bc);padding:9px 16px;border-radius:4px}
+:root[data-theme="dark"] .branch .go,
+:root:not([data-theme="light"]) .branch .go{color:#0B1016}
+.branch .go:hover{opacity:.9}
+
+/* corpus stat band */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);margin:22px 0 8px}
+.stat{background:var(--surface);padding:16px 14px}
+.stat .n{font-family:var(--mono);font-size:24px;font-weight:500;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums;display:block;line-height:1.1}
+.stat .k{font-size:11.5px;color:var(--ink-3);margin-top:5px;display:block;line-height:1.35}
+
+/* phases */
+.phases{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);margin:18px 0 8px}
+.phase{background:var(--surface);padding:15px 16px;display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:start}
+.phase .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  font-weight:500;padding:3px 8px;border-radius:2px;text-align:center;white-space:nowrap;align-self:start}
+.phase.now .tag{background:var(--accent-soft);color:var(--accent)}
+.phase.next .tag{background:var(--surface-2);color:var(--ink-3)}
+.phase .txt{font-size:14px;line-height:1.5;color:var(--ink-2)}
+.phase .txt b{color:var(--ink);font-weight:600;display:block;margin-bottom:2px;font-size:14.5px}
+@media (max-width:540px){.phase{grid-template-columns:1fr;gap:6px}}
+
+.note{border:1px solid var(--rule);border-left:3px solid var(--accent);background:var(--surface);
+  padding:14px 16px;margin:18px 0;font-size:14px;color:var(--ink-2)}
+.note p{max-width:68ch}
+.note .hd{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:6px;font-weight:500}
+
+ul{margin:0 0 16px;padding-left:20px;max-width:68ch;color:var(--ink-2)}
+li{margin-bottom:7px}
+
+.foot{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);
+  font-family:var(--mono);font-size:11.5px;color:var(--ink-3);line-height:1.7}
+.foot a{color:var(--accent)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"Interprovincial Trade Project",
+  "alternateName":"Mapping Interprovincial Trade Barriers in Canada",
+  "url":"https://intertra.github.io/Internal-Trade-Canada/",
+  "inLanguage":"en-CA",
+  "description":"An evidence base from the full text of every provincial, territorial and federal regulation — where Canadian rules diverge and act as barriers to internal trade.",
+  "creator":{"@type":"Person","name":"Wolfgang Alschner"},
+  "publisher":{"@type":"Organization","name":"University of Ottawa, Faculty of Law","url":"https://www.uottawa.ca/"}
+}
+</script>
+</head>
+<body>
+
+<div class="wrap">
+<header class="mast">
+  <p class="eyebrow">Faculty of Law · University of Ottawa</p>
+  <h1>Mapping Interprovincial Trade Barriers in Canada</h1>
+  <p class="standfirst">Canada's provinces, territories and federal government each write their own
+  regulations. Where those rules diverge, a product that is legal to sell in one province can be
+  unlawful in the next. Some of these divergences exist for good reason, such as differences in
+  climate, culture or circumstances. Some, however, impede the integration of the Canadian economy
+  without yielding wider benefits. This project does not tell the difference between the two, but
+  aims to place the debate on Canada's internal and external trade integration on a firmer evidence
+  basis. To this end it has compiled and analyzed the full text of every regulation in the country
+  to find where barriers may exist.</p>
+  <div class="provenance">
+    <span>Led by <b>Prof. Wolfgang Alschner</b></span>
+    <span>SSHRC-funded · three-year study</span>
+    <span>Corpus release <b>2026_1.1</b> · 14 jurisdictions</span>
+  </div>
+</header>
+
+<!-- WHY IT MATTERS -->
+<section>
+  <h2><span class="lead-in">Why it matters</span>Contributing to three debates</h2>
+  <p class="lede">From better regulation, to fewer internal barriers and international trade
+  diversification, this project provides a new evidence base to inform public policy debates.</p>
+
+  <div class="reasons">
+    <div class="reason">
+      <div class="idx">01</div>
+      <div>
+        <h3>Cutting red tape?</h3>
+        <p>A lighter regulatory load can create a more vibrant Canadian business environment. But not
+        every requirement is an unnecessary hindrance and cutting the wrong regulation may expose the
+        public to risk. Knowing what requirements exist and how they differ from jurisdiction to
+        jurisdiction can bring useful metrics to this debate.</p>
+      </div>
+    </div>
+    <div class="reason">
+      <div class="idx">02</div>
+      <div>
+        <h3>Internal trade barriers persist because standards diverge</h3>
+        <p>Goods lawful in one province can be unlawful in another because the two governments point to
+        different technical standards, or to different editions of the same standard. This is a barrier
+        to internal trade that is rarely visible from the text of either rule. The project makes it
+        visible, and specific enough to be acted on.</p>
+      </div>
+    </div>
+    <div class="reason">
+      <div class="idx">03</div>
+      <div>
+        <h3>Standards alignment shapes how far Canada can diversify its trade</h3>
+        <p>Whether Canadian rules line up with United States standards, or diverge province by province,
+        affects the ability to trade both within Canada and with partners beyond the US. Mapping where
+        Canadian law adopts foreign standards, and where it does not, is part of understanding the room
+        there is to diversify.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE TWO EXPLORERS -->
+<section>
+  <h2><span class="lead-in">Explore the data</span>Exploring Canada's regulatory landscape</h2>
+  <p class="lede">Two sets of analysis inform these debates. One focuses on standards within
+  regulations. The other measures the broader regulatory design, jurisdiction by jurisdiction.</p>
+
+  <div class="branches">
+    <article class="branch standards">
+      <div class="kicker">Standards</div>
+      <h3>Standards in Canadian Regulation</h3>
+      <p class="desc">Which technical standards regulators write into law, which editions they pin, and
+      the rare places one government will accept a foreign standard that its neighbour will not.</p>
+      <div class="figs">
+        <div class="fig"><span class="n">4,573</span><span class="k">standard references in force</span></div>
+        <div class="fig"><span class="n">926</span><span class="k">distinct standards cited</span></div>
+        <div class="fig"><span class="n">10</span><span class="k">editions of one elevator code, in force at once</span></div>
+      </div>
+      <a class="go" href="standards/index.html">Open the standards explorer &rarr;</a>
+    </article>
+
+    <article class="branch metrics">
+      <div class="kicker">Regulatory metrics</div>
+      <h3>Measuring Canadian Regulations</h3>
+      <p class="desc">How binding, flexible, complex and dated each jurisdiction's regulations are —
+      restriction counts and four semantic dimensions, mapped across the country and ranked down to
+      the individual regulation.</p>
+      <div class="figs">
+        <div class="fig"><span class="n">13,703</span><span class="k">regulations in the analysis cut</span></div>
+        <div class="fig"><span class="n">11</span><span class="k">measures across 14 jurisdictions</span></div>
+        <div class="fig"><span class="n">1.7&times;</span><span class="k">gap between the most and least restrictive jurisdiction</span></div>
+      </div>
+      <a class="go" href="metrics/index.html">Open the metrics explorer &rarr;</a>
+    </article>
+  </div>
+</section>
+
+<!-- THE RESEARCH PROJECT -->
+<section>
+  <h2><span class="lead-in">The research project</span>Reading the whole regulatory corpus, not only samples</h2>
+  <p>Most work on regulatory burden or interprovincial barriers rests on surveys or on a hand-picked
+  set of rules. This project starts from the full, consolidated regulations of all ten provinces, three
+  territories and the federal government, and treats them as one body of text that can be measured
+  consistently. Working from the complete corpus is what makes a fair comparison between jurisdictions
+  possible, and what lets a divergence be located to the exact provision where it sits.</p>
+
+  <div class="stats">
+    <div class="stat"><span class="n">14</span><span class="k">jurisdictions</span></div>
+    <div class="stat"><span class="n">21,318</span><span class="k">consolidated regulations</span></div>
+    <div class="stat"><span class="n">754,071</span><span class="k">provisions</span></div>
+    <div class="stat"><span class="n">2026_1.1</span><span class="k">frozen, citable release</span></div>
+  </div>
+
+  <p>The measures build on published methods. Restriction counts follow the
+  <a href="https://www.quantgov.org/canada-regdata" target="_blank" rel="noopener">RegData</a>
+  approach from the Mercatus Center; the four semantic dimensions come from
+  <a href="https://github.com/WAlschner/Semantic-Analysis-Regulations" target="_blank" rel="noopener">Alschner,
+  Zachar &amp; Pontello (2018)</a>; the standards layer is a rule-based extraction over a register of
+  43 standards bodies, with the most-cited standards audited by hand.</p>
+
+  <h3 style="font-size:12px;font-family:var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);margin:32px 0 12px;font-weight:500">Where the project is going</h3>
+  <div class="phases">
+    <div class="phase now">
+      <span class="tag">Now · Phase 1</span>
+      <div class="txt"><b>The corpus and the first measures</b>Building the full-text corpus, and the two
+      explorers on this site: what each jurisdiction's regulation looks like by the numbers, and which
+      technical standards it incorporates.</div>
+    </div>
+    <div class="phase next">
+      <span class="tag">Next · Phase 2</span>
+      <div class="txt"><b>Finding the divergences</b>Comparing rules across jurisdictions to detect where
+      they genuinely differ, and grouping them by industry and by the goods or issues they govern — the
+      level at which a specific barrier to internal trade becomes visible.</div>
+    </div>
+    <div class="phase next">
+      <span class="tag">Later · Phase 3</span>
+      <div class="txt"><b>From divergence to barrier</b>Separating the differences that obstruct trade
+      from those that reflect a genuine local choice, and setting out where alignment would help.</div>
+    </div>
+  </div>
+</section>
+
+<!-- USING IT -->
+<section>
+  <h2><span class="lead-in">Using this work</span>Who it is for, and how to cite it</h2>
+  <p>The site is meant for the Canadian public, policymakers, researchers and journalists. The two
+  explorers are written to be read without a background in either law or data: each opens with headline
+  findings and ends with a plain statement of what the numbers can and cannot show.</p>
+  <ul>
+    <li>Each explorer carries its own limits — most importantly, standards reached only through an
+    adopted building or fire code are not yet visible, and restriction counts are a provisional version
+    that runs slightly high. Levels are provisional; rankings are stable.</li>
+    <li><strong>Every figure is traceable.</strong> All numbers come from release <code style="font-family:var(--mono);font-size:.88em;background:var(--surface-2);padding:1px 5px;border-radius:3px">2026_1.1</code>,
+    frozen 15 October 2026, so any figure here can be placed against an exact state of the law.</li>
+    <li><strong>Data and code will be public.</strong> The corpus build, the analysis layer and these
+    pages are being prepared for release in an open GitHub repository so the work can be reproduced and
+    extended.</li>
+  </ul>
+
+  <div class="note">
+    <div class="hd">Research in progress</div>
+    <p>This is Phase 1 of a continuing study. The findings here are stable enough to explore and to
+    report, but the project is ongoing — read each explorer's method and limits before citing, and
+    check back as the later phases add the divergence, industry and product views.</p>
+  </div>
+</section>
+
+<footer class="foot">
+  Interprovincial Trade Project · Faculty of Law, University of Ottawa · led by Prof. Wolfgang Alschner<br>
+  SSHRC-funded · corpus release 2026_1.1, frozen 15 October 2026 · 21,318 regulations · 754,071 provisions · 14 jurisdictions<br>
+  Figures cover law in force, body text only. Research in progress — see each explorer's method and limits before citing.
+</footer>
+</div>
+
+</body>
+</html>
