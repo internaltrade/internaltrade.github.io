@@ -4,7 +4,7 @@ A public, static site that reads the full text of every consolidated regulation
 in Canada and shows where provincial rules diverge in ways that get in the way
 of trade. Faculty of Law, University of Ottawa — led by Prof. Wolfgang Alschner.
 
-**Live site:** _add the GitHub Pages URL here once published_
+**Live site:** <https://intertra.github.io/Internal-Trade-Canada/>
 **Pinned corpus release:** `2026_1.1` (see [`RELEASE`](RELEASE))
 
 The site has a landing page and two interactive explorers:
