@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://intertra.github.io/Internal-Trade-Canada/</loc>
+    <loc>https://internaltrade.github.io/</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://intertra.github.io/Internal-Trade-Canada/standards/</loc>
+    <loc>https://internaltrade.github.io/standards/</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://intertra.github.io/Internal-Trade-Canada/metrics/</loc>
+    <loc>https://internaltrade.github.io/metrics/</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

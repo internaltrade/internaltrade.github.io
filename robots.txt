@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://intertra.github.io/Internal-Trade-Canada/sitemap.xml
+Sitemap: https://internaltrade.github.io/sitemap.xml
